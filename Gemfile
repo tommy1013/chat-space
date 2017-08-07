@@ -62,3 +62,5 @@ end
 group :test do
      gem 'rspec'
 end
+
+gem "font-awesome-rails"
