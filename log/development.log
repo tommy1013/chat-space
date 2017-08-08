@@ -8711,3 +8711,429 @@ Processing by MessagesController#index as HTML
 Completed 200 OK in 65ms (Views: 62.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-08-08 18:45:06 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (17.8ms)
+  Rendered messages/index.html.haml within layouts/application (61.5ms)
+Completed 200 OK in 784ms (Views: 776.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 18:46:19 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (8.8ms)
+  Rendered messages/index.html.haml within layouts/application (25.5ms)
+Completed 200 OK in 565ms (Views: 562.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 18:46:34 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (8.8ms)
+  Rendered messages/index.html.haml within layouts/application (22.3ms)
+Completed 200 OK in 467ms (Views: 464.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 18:46:45 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (4.8ms)
+  Rendered messages/index.html.haml within layouts/application (14.4ms)
+Completed 200 OK in 47ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 18:47:28 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (6.9ms)
+  Rendered messages/index.html.haml within layouts/application (18.2ms)
+Completed 200 OK in 465ms (Views: 462.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 18:47:30 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (4.8ms)
+  Rendered messages/index.html.haml within layouts/application (14.9ms)
+Completed 200 OK in 43ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 18:47:55 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (5.2ms)
+  Rendered messages/index.html.haml within layouts/application (14.9ms)
+Completed 200 OK in 502ms (Views: 499.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 18:52:03 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (5.9ms)
+  Rendered messages/index.html.haml within layouts/application (383.7ms)
+Completed 500 Internal Server Error in 401ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `input' for #<#<Class:0x007fabd0025480>:0x007fabced73d28>):
+    27:     .main_bottom.papa
+    28:       .main_bottom__message-box
+    29:         .main_bottom__message-box__message
+    30:           %input{:name => "url", :placeholder => "type a message", class: input-box}
+    31:           .main_bottom__message-box__icon
+    32:             = link_to "www.google.com", class: "bottom_icon" do
+    33:               = fa_icon 'picture-o'
+  
+app/views/messages/index.html.haml:30:in `_app_views_messages_index_html_haml___678565345642376934_70187943347180'
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (99.9ms)
+Started GET "/" for 127.0.0.1 at 2017-08-08 18:52:25 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (4.9ms)
+  Rendered messages/index.html.haml within layouts/application (15.5ms)
+Completed 200 OK in 456ms (Views: 453.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 18:52:46 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (7.9ms)
+  Rendered messages/index.html.haml within layouts/application (22.7ms)
+Completed 200 OK in 534ms (Views: 531.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 18:53:31 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (6.5ms)
+  Rendered messages/index.html.haml within layouts/application (21.8ms)
+Completed 200 OK in 478ms (Views: 475.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 18:54:09 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (5.3ms)
+  Rendered messages/index.html.haml within layouts/application (16.0ms)
+Completed 200 OK in 475ms (Views: 472.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 18:54:22 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (5.1ms)
+  Rendered messages/index.html.haml within layouts/application (18.9ms)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 18:58:35 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (11.1ms)
+  Rendered messages/index.html.haml within layouts/application (32.2ms)
+Completed 200 OK in 592ms (Views: 588.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 18:59:09 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (5.5ms)
+  Rendered messages/index.html.haml within layouts/application (15.3ms)
+Completed 200 OK in 48ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 18:59:56 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+    27:     .main_bottom.papa
+    28:       %input{:name => "url", :placeholder => "type a message", class: "main_bottom__message-box"}
+    29:         .main_bottom__message-box__icon
+    30:             = link_to "www.google.com", class: "bottom_icon" do
+    31:               = fa_icon 'picture-o'
+    32:       .main_bottom__sent-button
+    33:         = link_to "www.google.com", class: "bottom_sent_button" do
+  
+app/views/messages/index.html.haml:30
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.9ms)
+Started GET "/" for 127.0.0.1 at 2017-08-08 19:00:17 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (5.3ms)
+  Rendered messages/index.html.haml within layouts/application (16.3ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 19:00:37 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (5.0ms)
+  Rendered messages/index.html.haml within layouts/application (16.6ms)
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  }": expected selector or at-rule, was "}"):
+    4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    5:     %title ChatSpace
+    6:     = csrf_meta_tags
+    7:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    9:   %body
+   10:     = yield
+  
+app/assets/stylesheets/messages.scss:182
+app/assets/stylesheets/application.scss:3
+app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___2674974734860741905_70187961849120'
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.8ms)
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (111.1ms)
+Started GET "/" for 127.0.0.1 at 2017-08-08 19:00:47 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (5.5ms)
+  Rendered messages/index.html.haml within layouts/application (16.1ms)
+Completed 200 OK in 488ms (Views: 485.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 19:01:11 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (6.2ms)
+  Rendered messages/index.html.haml within layouts/application (26.3ms)
+Completed 200 OK in 563ms (Views: 560.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 20:12:11 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (26.0ms)
+  Rendered messages/index.html.haml within layouts/application (89.8ms)
+Completed 200 OK in 813ms (Views: 802.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 20:13:49 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (32.8ms)
+  Rendered messages/index.html.haml within layouts/application (49.8ms)
+Completed 200 OK in 573ms (Views: 570.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 20:21:41 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (5.3ms)
+  Rendered messages/index.html.haml within layouts/application (16.4ms)
+Completed 200 OK in 511ms (Views: 507.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 20:23:29 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (5.2ms)
+  Rendered messages/index.html.haml within layouts/application (20.8ms)
+Completed 200 OK in 546ms (Views: 543.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 20:23:49 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (5.9ms)
+  Rendered messages/index.html.haml within layouts/application (17.8ms)
+Completed 200 OK in 489ms (Views: 486.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 20:23:58 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (7.1ms)
+  Rendered messages/index.html.haml within layouts/application (17.2ms)
+Completed 200 OK in 485ms (Views: 481.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/www.google.com" for 127.0.0.1 at 2017-08-08 20:24:22 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/www.google.com"):
+  
+actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.5) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered collection of /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (34.9ms)
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (43.7ms)
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (212.4ms)
+Started GET "/www.google.com" for 127.0.0.1 at 2017-08-08 20:24:35 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/www.google.com"):
+  
+actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.5) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered collection of /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (8.0ms)
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (135.2ms)
+Started GET "/www.google.com" for 127.0.0.1 at 2017-08-08 20:24:36 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/www.google.com"):
+  
+actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.5) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (5.9ms)
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (125.8ms)
+Started GET "/www.google.com" for 127.0.0.1 at 2017-08-08 20:24:46 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/www.google.com"):
+  
+actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.5) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.5) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (6.3ms)
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (124.0ms)
+Started GET "/" for 127.0.0.1 at 2017-08-08 20:27:32 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (7.2ms)
+  Rendered messages/index.html.haml within layouts/application (35.9ms)
+Completed 200 OK in 727ms (Views: 722.7ms | ActiveRecord: 0.0ms)
+
+

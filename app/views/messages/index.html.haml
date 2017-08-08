@@ -25,9 +25,7 @@
         .reply command Enterで送信したい感がある
 
     .main_bottom.papa
-      .main_bottom__message-box
-        .main_bottom__message-box__message
-          %input{:name => "url", :size => "80", :placeholder => "type a message"}
+      %input{:name => "url", :placeholder => "type a message", class: "main_bottom__message-box"}
         .main_bottom__message-box__icon
           = link_to "www.google.com", class: "bottom_icon" do
             = fa_icon 'picture-o'

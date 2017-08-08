@@ -39,13 +39,13 @@ body {
 
     &__icon-left{
       float: right;
-      font-size: 25px;
+      font-size: 20px;
       margin: 0px 10px 0px 10px;
     }
 
     &__icon-right{
       float: right;
-      font-size: 25px;
+      font-size: 20px;
       margin: 0px 10px 0px 10px;
     }
   }
@@ -158,18 +158,12 @@ body {
     color: $mian_name_black_color;
     height: 50px;
     float: left;
-    width: calc(100% - 135px);
+    width: calc(100% - 160px);
     padding: 0px 10px;
 
-    &__message{
-      line-height: 50px;
-      font-size: 16px;
-      float: left;
-    }
-
     &__icon{
-      float: right;
-      line-height: 50px;
+      position:absolute; bottom:16px; right:190px;
+      font-size:20px;
     }
   }
   &__sent-button{
@@ -184,3 +178,9 @@ body {
     margin-left: 15px;
   }
 }
+
+// .input-box{
+//   height: 50px;
+//   width: 200px;
+//   width: calc(100% - 135px);
+// }
