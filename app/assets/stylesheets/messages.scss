@@ -14,50 +14,43 @@ height: 100vh;
 }
 
 .side_top{
-  height:120px;
-  width: 260px;
-  background-color: #253141;
-  padding: 0px 20px 0px 20px;
-}
+height:120px;
+width: 260px;
+background-color: #253141;
+padding: 0px 20px 0px 20px;
+color: $side-white-color;
 
-.side_top_message_box{
+  &__message-box{
   height: 16px;
-  .name{
+
+    &__name{
+    font-size: 16px;
+    font-weight:Bold;
+    line-height: 120px;
+    float: left;
+    }
+  }
+
+  &__icon-box{
+  float: right;
+  line-height: 90px;
   font-size: 16px;
-  font-weight:Bold;
-  color: $side-white-color;
-  line-height: 120px;
-  float: left;
-  }
-}
 
-.icon_box{
-float: right;
-line-height: 90px;
-font-size: 16px;
-color: $main-white-color;
 
-  .icon_box1{
-  float: right;
-  color: $main-white-color;
-  font-size: 25px;
-  margin: 0px 10px 0px 10px;
-
-    .icon_box1_icon{
-    color: $main-white-color;
+    &__icon-left{
+    float: right;
+    font-size: 25px;
+    margin: 0px 10px 0px 10px;
     }
-  }
 
-  .icon_box2{
-  float: right;
-  font-size: 25px;
-  margin: 0px 10px 0px 10px;
-
-    .icon_box2_icon{
-    color: $main-white-color;
+    &__icon-right{
+    float: right;
+    font-size: 25px;
+    margin: 0px 10px 0px 10px;
     }
   }
 }
+
 
 .message{
     font-size: 15px;
@@ -71,7 +64,7 @@ color: $side-white-color;
 padding-bottom: 40px;
 }
 
-.side_bottom{
+.side-bottom{
 width: 260px;
 height: calc(100vh - 120px);
 background-color: #2f3e51;
@@ -97,26 +90,28 @@ height: 100%;
 width: calc(100% - 300px);
 }
 
-header{
-color:$main-white-color;
-height: 120px;
+.chat-header{
+  color:$main-white-color;
+  height: 120px;
 
-  .header_box1{
+  &__left{
     float: left;
 
-    .title{
+    &__title{
+    height: 20px;
+    width: 400px;
     font-size: 20px;
     color:#333333;
     padding: 35px 0px 15px 0px;
     }
 
-    .sub_sample{
+    &__sub_sample{
     font-size: 12px;
-    color: color_999;
+    color: $color_gray;
     }
   }
 
-  .header_box2{
+  &__right{
   float: right;
   line-height: 140px;
   }
@@ -130,7 +125,7 @@ height: 120px;
   height: calc(100% - 195px);
   background-color: #f8f8f8;
 
-  .main_center_box1.user_name.reply.time{
+  &__box1.user_name.reply.time{
 
   }
 }
@@ -144,25 +139,7 @@ padding: 46px 0px 10px 0px;
 
 .time{
 font-size: 12px;
-color: color_999;
-}
-
-.reply{
-font-size: 14px;
-font-family: $mian_name_black_color;
-padding-bottom: 40px;
-}
-
-.user_name{
-font-size: 16px;
-color: $mian_name_black_color;
-font-weight: Bold;
-padding: 46px 0px 10px 0px;
-}
-
-.time{
-font-size: 12px;
-color: color_999;
+color: $color_gray;
 }
 
 .reply{
@@ -176,7 +153,7 @@ padding: 20px 40px 20px 50px;
 background-color: #AAAAAA;
 height: 55px;
 
-  .bottom_message_box{
+  &__message-box{
   background-color: $main-white-color;
   color: $mian_name_black_color;
   height: 50px;
@@ -184,18 +161,18 @@ height: 55px;
   width: calc(100% - 135px);
   padding: 0px 10px;
 
-    .bottom_message{
+    &__message{
     line-height: 50px;
     font-size: 16px;
     float: left;
     }
 
-    .bottom_icon{
+    &__icon{
     float: right;
     line-height: 50px;
     }
   }
-  .bottom_sent_button{
+  &__sent-button{
   float: right;
   height: 50px;
   width: 100px;
