@@ -79,9 +79,9 @@ Completed 200 OK in 13ms (Views: 8.8ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/chatspace" for 127.0.0.1 at 2017-08-03 17:22:55 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/chatspace"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -117,9 +117,9 @@ puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (245.4ms)
 Started GET "/chatspaces" for 127.0.0.1 at 2017-08-03 17:23:16 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/chatspaces"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -161,11 +161,11 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: nesting within a header command is illegal.):
     1: !!!
     2:  %p Hello World!
-  
+
 app/views/chatspaces/index.html.haml:2
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -182,11 +182,11 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: nesting within a header command is illegal.):
     1: !!!
     2:  <p> Hello World</p>
-  
+
 app/views/chatspaces/index.html.haml:2
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -217,13 +217,13 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %p and nested within it.):
     3: %p Good bye world
     4: %p sample
     5: %p seo
     6:   Hello World
-  
+
 app/views/chatspaces/index.html.haml:6
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -255,9 +255,9 @@ Completed 200 OK in 133ms (Views: 120.7ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/scss/chatspace.scss" for 127.0.0.1 at 2017-08-03 18:05:19 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/scss/chatspace.scss"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -306,15 +306,15 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 3 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
     1: %html
     2:   %head
     3:    %link rel="stylesheets" href="chatspace.scss"
     4:   %body
     5:     Hello Haml World!!
-    6: 
-  
+    6:
+
 app/views/chatspaces/index.html.haml:3
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -331,15 +331,15 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 3 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
     1: %html
     2:   %head
     3:    / %link rel="stylesheets" href="chatspace.scss"
     4:   %body
     5:     Hello Haml World!!
-    6: 
-  
+    6:
+
 app/views/chatspaces/index.html.haml:3
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -356,15 +356,15 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 3 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
     1: %html
     2:   %head
     3:    / %link rel="stylesheets" href="chatspace.scss"
     4:   %body
     5:     Hello Haml World!!
-    6: 
-  
+    6:
+
 app/views/chatspaces/index.html.haml:3
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -381,15 +381,15 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 3 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
     1: %html
     2:   %head
     3:    / %link rel="stylesheets" href="chatspace.scss"
     4:   %body
     5:     Hello Haml World!!
-    6: 
-  
+    6:
+
 app/views/chatspaces/index.html.haml:3
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -400,9 +400,9 @@ app/views/chatspaces/index.html.haml:3
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (123.1ms)
 Started GET "/chatspaces" for 127.0.0.1 at 2017-08-03 20:25:35 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/chatspaces"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -438,9 +438,9 @@ puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.1ms)
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (150.9ms)
 Started GET "/application" for 127.0.0.1 at 2017-08-03 20:26:04 +0900
-  
+
 AbstractController::ActionNotFound (The action 'index' could not be found for ApplicationController):
-  
+
 actionpack (5.0.5) lib/abstract_controller/base.rb:121:in `process'
 actionview (5.0.5) lib/action_view/rendering.rb:30:in `process'
 actionpack (5.0.5) lib/action_controller/metal.rb:190:in `dispatch'
@@ -497,9 +497,9 @@ puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
 Started GET "/application" for 127.0.0.1 at 2017-08-03 20:27:56 +0900
-  
+
 AbstractController::ActionNotFound (The action 'application' could not be found for ApplicationController):
-  
+
 actionpack (5.0.5) lib/abstract_controller/base.rb:121:in `process'
 actionview (5.0.5) lib/action_view/rendering.rb:30:in `process'
 actionpack (5.0.5) lib/action_controller/metal.rb:190:in `dispatch'
@@ -556,9 +556,9 @@ puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
 Started GET "/application" for 127.0.0.1 at 2017-08-03 20:29:36 +0900
-  
+
 AbstractController::ActionNotFound (The action 'application' could not be found for ApplicationController):
-  
+
 actionpack (5.0.5) lib/abstract_controller/base.rb:121:in `process'
 actionview (5.0.5) lib/action_view/rendering.rb:30:in `process'
 actionpack (5.0.5) lib/action_controller/metal.rb:190:in `dispatch'
@@ -615,9 +615,9 @@ puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
 Started GET "/application" for 127.0.0.1 at 2017-08-03 20:30:27 +0900
-  
+
 AbstractController::ActionNotFound (The action 'application' could not be found for ApplicationController):
-  
+
 actionpack (5.0.5) lib/abstract_controller/base.rb:121:in `process'
 actionview (5.0.5) lib/action_view/rendering.rb:30:in `process'
 actionpack (5.0.5) lib/action_controller/metal.rb:190:in `dispatch'
@@ -674,9 +674,9 @@ puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.7ms)
 Started GET "/chatspace" for 127.0.0.1 at 2017-08-03 20:30:41 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/chatspace"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -712,9 +712,9 @@ puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (128.7ms)
 Started GET "/chatspace" for 127.0.0.1 at 2017-08-03 20:33:02 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/chatspace"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -756,15 +756,15 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 3 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
     1: %html
     2:   %head
     3:    %link rel="stylesheet" href="style.css">
     4:   %body
     5:     Hello Haml World!!
-    6: 
-  
+    6:
+
 app/views/chatspaces/index.html.haml:3
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -775,9 +775,9 @@ app/views/chatspaces/index.html.haml:3
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (103.9ms)
 Started GET "/chatspace" for 127.0.0.1 at 2017-08-03 20:34:16 +0900
-  
+
 LoadError (Unable to autoload constant ChatspaceController, expected /Users/tomi/projects/chat-space/app/controllers/chatspace_controller.rb to define it):
-  
+
 activesupport (5.0.5) lib/active_support/dependencies.rb:512:in `load_missing_constant'
 activesupport (5.0.5) lib/active_support/dependencies.rb:203:in `const_missing'
 activesupport (5.0.5) lib/active_support/inflector/methods.rb:268:in `const_get'
@@ -846,9 +846,9 @@ puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.6ms)
 Started GET "/chatspace" for 127.0.0.1 at 2017-08-03 20:36:53 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/chatspace"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -890,15 +890,15 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 3 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
     1: %html
     2:   %head
     3:    %link rel="stylesheet" href="style.css">
     4:   %body
     5:     Hello Haml World!!
-    6: 
-  
+    6:
+
 app/views/chatspaces/index.html.haml:3
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -936,7 +936,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
      9:   %body
     10:     = yield
@@ -945,7 +945,7 @@ ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indenta
     13:      %p sample
     14: / %p Good bye world
     15: / %p sample
-  
+
 app/views/chatspaces/index.html.haml:12
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -962,7 +962,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
      9:   %body
     10:     = yield
@@ -971,7 +971,7 @@ ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indenta
     13:      %p sample
     14: / %p Good bye world
     15: / %p sample
-  
+
 app/views/chatspaces/index.html.haml:12
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1065,7 +1065,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "  margin": expected ";", was ":10px 10px 10px..."):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -1074,7 +1074,7 @@ ActionView::Template::Error (Invalid CSS after "  margin": expected ";", was ":1
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/application.scss:12
 app/views/chatspaces/index.html.haml:7:in `_app_views_chatspaces_index_html_haml___3423530440302240120_70217664242980'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -1092,7 +1092,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "  display": expected ";", was ": :inline;"):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -1101,7 +1101,7 @@ ActionView::Template::Error (Invalid CSS after "  display": expected ";", was ":
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/application.scss:13
 app/views/chatspaces/index.html.haml:7:in `_app_views_chatspaces_index_html_haml___3423530440302240120_70217663198660'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -1119,7 +1119,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "  font": expected ";", was ":left;"):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -1128,7 +1128,7 @@ ActionView::Template::Error (Invalid CSS after "  font": expected ";", was ":lef
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/application.scss:14
 app/views/chatspaces/index.html.haml:7:in `_app_views_chatspaces_index_html_haml___3423530440302240120_70217644282900'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -1188,16 +1188,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
      9:   %body
     10:     = yield
     11:     %div sidetop
     12:       %h2 sample
     13:       %p Good bye world
-    14: 
+    14:
     15:     %h1 sample
-  
+
 app/views/chatspaces/index.html.haml:12
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1214,16 +1214,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %header and nested within it.):
      9:   %body
     10:     = yield
     11:     %header sidetop
     12:       %h2 sample
     13:       %p Good bye world
-    14: 
+    14:
     15:     %h1 sample
-  
+
 app/views/chatspaces/index.html.haml:12
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1310,7 +1310,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "  background-color": expected ";", was ":#38AEF0"):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -1319,7 +1319,7 @@ ActionView::Template::Error (Invalid CSS after "  background-color": expected ";
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/application.scss:12
 app/views/chatspaces/index.html.haml:7:in `_app_views_chatspaces_index_html_haml___3423530440302240120_70217684344180'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -1337,7 +1337,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "...t-align: center": expected "{", was ";"):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -1346,7 +1346,7 @@ ActionView::Template::Error (Invalid CSS after "...t-align: center": expected "{
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/application.scss:14
 app/views/chatspaces/index.html.haml:7:in `_app_views_chatspaces_index_html_haml___3423530440302240120_70217656183940'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -1364,7 +1364,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "...sition：absolute": expected "{", was ";"):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -1373,7 +1373,7 @@ ActionView::Template::Error (Invalid CSS after "...sition：absolute": expected 
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/application.scss:13
 app/views/chatspaces/index.html.haml:7:in `_app_views_chatspaces_index_html_haml___3423530440302240120_70217680507880'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -1405,7 +1405,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "  padding: ": expected expression (e.g. 1px, bold), was ":0;"):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -1414,7 +1414,7 @@ ActionView::Template::Error (Invalid CSS after "  padding: ": expected expressio
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/application.scss:5
 app/views/chatspaces/index.html.haml:7:in `_app_views_chatspaces_index_html_haml___3423530440302240120_70217683436300'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -1432,7 +1432,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "  padding: ": expected expression (e.g. 1px, bold), was ":0;"):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -1441,7 +1441,7 @@ ActionView::Template::Error (Invalid CSS after "  padding: ": expected expressio
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/application.scss:5
 app/views/chatspaces/index.html.haml:7:in `_app_views_chatspaces_index_html_haml___3423530440302240120_70217655859660'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -1466,7 +1466,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %class and nested within it.):
      8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
      9:   %body
@@ -1474,8 +1474,8 @@ ActionView::Template::Error (Illegal nesting: content can't be both given on the
     11:     = yield
     12:     %header
     13:       %h2 チャットグループが作成されました。
-    14: 
-  
+    14:
+
 app/views/chatspaces/index.html.haml:11
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1492,7 +1492,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "  hello": expected "{", was "}"):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -1501,7 +1501,7 @@ ActionView::Template::Error (Invalid CSS after "  hello": expected "{", was "}")
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/application.scss:12
 app/views/chatspaces/index.html.haml:7:in `_app_views_chatspaces_index_html_haml___3423530440302240120_70217656776860'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -1519,7 +1519,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 80ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "  hello": expected "{", was "}"):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -1528,7 +1528,7 @@ ActionView::Template::Error (Invalid CSS after "  hello": expected "{", was "}")
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/application.scss:12
 app/views/chatspaces/index.html.haml:7:in `_app_views_chatspaces_index_html_haml___3423530440302240120_70217679628380'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -1546,7 +1546,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
      8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
      9:   %body
@@ -1554,8 +1554,8 @@ ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indenta
     11:      %div{:id => "main",:class => "contents"}
     12:     %header
     13:       %h2 チャットグループが作成されました。
-    14: 
-  
+    14:
+
 app/views/chatspaces/index.html.haml:11
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1572,7 +1572,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
      8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
      9:   %body
@@ -1580,8 +1580,8 @@ ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indenta
     11:      %div{:class => "contents"}
     12:     %header
     13:       %h2 チャットグループが作成されました。
-    14: 
-  
+    14:
+
 app/views/chatspaces/index.html.haml:11
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1598,7 +1598,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
      8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
      9:   %body
@@ -1606,8 +1606,8 @@ ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indenta
     11:      %section.contents
     12:     %header
     13:       %h2 チャットグループが作成されました。
-    14: 
-  
+    14:
+
 app/views/chatspaces/index.html.haml:11
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1624,16 +1624,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
      8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
      9:   %body
-    10: 
+    10:
     11:      %section.contents
     12:     %header
     13:       %h2 チャットグループが作成されました。
-    14: 
-  
+    14:
+
 app/views/chatspaces/index.html.haml:11
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1650,16 +1650,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
      8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
      9:   %body
-    10: 
+    10:
     11:      %section.content
     12:     %header
     13:       %h2 チャットグループが作成されました。
-    14: 
-  
+    14:
+
 app/views/chatspaces/index.html.haml:11
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1676,16 +1676,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
      8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
      9:   %body
-    10: 
+    10:
     11:      %div{:class => "content"}
     12:     %header
     13:       %h2 チャットグループが作成されました。
-    14: 
-  
+    14:
+
 app/views/chatspaces/index.html.haml:11
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1702,16 +1702,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
      8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
      9:   %body
-    10: 
+    10:
     11:      %content HEllo,World
     12:     %header
     13:       %h2 チャットグループが作成されました。
-    14: 
-  
+    14:
+
 app/views/chatspaces/index.html.haml:11
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1728,16 +1728,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
      8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
      9:   %body
-    10: 
+    10:
     11:      #content
-    12: 
+    12:
     13:     %header
     14:       %h2 チャットグループが作成されました。
-  
+
 app/views/chatspaces/index.html.haml:11
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1754,16 +1754,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
      8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
      9:   %body
-    10: 
+    10:
     11:      #content
     12:     .main
     13:     .sidetop
     14:       %h2 チャットグループが作成されました。
-  
+
 app/views/chatspaces/index.html.haml:11
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1780,16 +1780,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
      8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
      9:   %body
-    10: 
+    10:
     11:      %div.content
     12:     .main
     13:     .sidetop
     14:       %h2 チャットグループが作成されました。
-  
+
 app/views/chatspaces/index.html.haml:11
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1806,16 +1806,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
      8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
      9:   %body
-    10: 
+    10:
     11:      %div{class: "content"} Contents
     12:     .main
     13:     .sidetop
     14:       %h2 チャットグループが作成されました。
-  
+
 app/views/chatspaces/index.html.haml:11
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1832,16 +1832,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
      8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
      9:   %body
-    10: 
+    10:
     11:      %div{class: "content"}
     12:     .main
     13:     .sidetop
     14:       %h2 チャットグループが作成されました。
-  
+
 app/views/chatspaces/index.html.haml:11
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1858,16 +1858,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
      8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
      9:   %body
-    10: 
+    10:
     11:      %div{class:"content"}
     12:     .main
     13:     .sidetop
     14:       %h2 チャットグループが作成されました。
-  
+
 app/views/chatspaces/index.html.haml:11
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1884,16 +1884,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
      8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
      9:   %body
-    10: 
+    10:
     11:      .contents
     12:      %div{}
     13:     .sidetop
     14:       %h2 チャットグループが作成されました。
-  
+
 app/views/chatspaces/index.html.haml:11
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1910,7 +1910,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
      8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
      9:   %body
@@ -1919,7 +1919,7 @@ ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indenta
     12:      %div{}
     13:     .sidetop
     14:       %h2 チャットグループが作成されました。
-  
+
 app/views/chatspaces/index.html.haml:11
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1936,7 +1936,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
      8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
      9:   %body
@@ -1945,7 +1945,7 @@ ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indenta
     12:     .sidetop
     13:       %h2 チャットグループが作成されました。
     14:       %h1 sample
-  
+
 app/views/chatspaces/index.html.haml:11
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -1962,7 +1962,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 309ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "  hello": expected "{", was "}"):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -1971,7 +1971,7 @@ ActionView::Template::Error (Invalid CSS after "  hello": expected "{", was "}")
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/application.scss:12
 app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___2770390343210236435_70217683484880'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -1990,9 +1990,9 @@ Completed 200 OK in 107ms (Views: 96.2ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/style.css" for 127.0.0.1 at 2017-08-05 12:51:43 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/style.css"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2035,9 +2035,9 @@ Completed 200 OK in 36ms (Views: 32.2ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/style.css" for 127.0.0.1 at 2017-08-05 12:53:35 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/style.css"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2080,9 +2080,9 @@ Completed 200 OK in 145ms (Views: 142.6ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/style.css" for 127.0.0.1 at 2017-08-05 12:54:08 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/style.css"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2125,9 +2125,9 @@ Completed 200 OK in 234ms (Views: 226.6ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/style.css" for 127.0.0.1 at 2017-08-05 13:13:16 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/style.css"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2170,9 +2170,9 @@ Completed 200 OK in 141ms (Views: 134.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/style.css" for 127.0.0.1 at 2017-08-05 13:18:44 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/style.css"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2215,9 +2215,9 @@ Completed 200 OK in 84ms (Views: 81.9ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/style.css" for 127.0.0.1 at 2017-08-05 13:21:53 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/style.css"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2260,9 +2260,9 @@ Completed 200 OK in 55ms (Views: 52.8ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/style.css" for 127.0.0.1 at 2017-08-05 13:22:05 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/style.css"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2305,9 +2305,9 @@ Completed 200 OK in 50ms (Views: 47.9ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/style.css" for 127.0.0.1 at 2017-08-05 13:22:18 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/style.css"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2350,9 +2350,9 @@ Completed 200 OK in 55ms (Views: 53.0ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/style.css" for 127.0.0.1 at 2017-08-05 13:23:23 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/style.css"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2395,9 +2395,9 @@ Completed 200 OK in 49ms (Views: 46.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/style.css" for 127.0.0.1 at 2017-08-05 13:23:45 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/style.css"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2460,14 +2460,14 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Indenting at the beginning of the document is illegal.):
-    1: 
+    1:
     2:     <header class="top_message">
     3:      チャッスペースが作成されました。
     4:     </header><!-- /header -->
     5:     <div class="contents clearfix">
-  
+
 app/views/chatspaces/index.html.haml:2
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -2484,14 +2484,14 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Indenting at the beginning of the document is illegal.):
-    1: 
+    1:
     2:     %header{class:"top_message"}
     3:      チャッスペースが作成されました。
     4:     </header><!-- /header -->
     5:     <div class="contents clearfix">
-  
+
 app/views/chatspaces/index.html.haml:2
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -2508,14 +2508,14 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Indenting at the beginning of the document is illegal.):
-    1: 
+    1:
     2:     %header{class: "top_message"}
     3:      チャッスペースが作成されました。
     4:     </header><!-- /header -->
     5:     <div class="contents clearfix">
-  
+
 app/views/chatspaces/index.html.haml:2
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -2532,14 +2532,14 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Indenting at the beginning of the document is illegal.):
-    1: 
+    1:
     2:     %header.top_message
     3:      チャッスペースが作成されました。
     4:     </header><!-- /header -->
     5:     <div class="contents clearfix">
-  
+
 app/views/chatspaces/index.html.haml:2
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -2556,14 +2556,14 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Indenting at the beginning of the document is illegal.):
-    1: 
+    1:
     2:     %header.top_message
     3:       チャッスペースが作成されました。
     4:     </header><!-- /header -->
     5:     <div class="contents clearfix">
-  
+
 app/views/chatspaces/index.html.haml:2
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -2580,14 +2580,14 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Indenting at the beginning of the document is illegal.):
-    1: 
+    1:
     2:     %header.top_message
     3:       チャッスペースが作成されました。
     4:     <div class="contents clearfix">
     5:     <div class="side">
-  
+
 app/views/chatspaces/index.html.haml:2
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -2604,16 +2604,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
-    1: 
+    1:
     2: %header.top_message
     3:   チャッスペースが作成されました。
     4:     <div class="contents clearfix">
     5:     <div class="side">
     6:         <div class="side_top">
     7:          <p class="name">ryosikemaehira</p>
-  
+
 app/views/chatspaces/index.html.haml:4
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -2630,16 +2630,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
-    1: 
+    1:
     2: %header.top_message
     3:   チャッスペースが作成されました。
     4:     / <div class="contents clearfix">
     5:     / <div class="side">
     6:     /     <div class="side_top">
     7:     /      <p class="name">ryosikemaehira</p>
-  
+
 app/views/chatspaces/index.html.haml:4
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -2656,16 +2656,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
-    1: 
+    1:
     2: %header.top_message
     3:   チャッスペースが作成されました。
     4:     <div class="contents clearfix">
     5:     <div class="side">
     6:         <div class="side_top">
     7:          <p class="name">ryosikemaehira</p>
-  
+
 app/views/chatspaces/index.html.haml:4
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -2682,7 +2682,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
     3:     チャッスペースが作成されました。
     4:     <div class="contents clearfix">
@@ -2690,8 +2690,8 @@ ActionView::Template::Error (Illegal nesting: nesting within plain text is illeg
     6:         <div class="side_top">
     7:          <p class="name">ryosikemaehira</p>
     8:         </div>
-    9: 
-  
+    9:
+
 app/views/chatspaces/index.html.haml:6
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -2708,16 +2708,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
-    1: 
+    1:
     2: %header.top_message
     3: チャッスペースが作成されました。
     4:     <div class="contents clearfix">
     5:     <div class="side">
     6:         <div class="side_top">
     7:          <p class="name">ryosikemaehira</p>
-  
+
 app/views/chatspaces/index.html.haml:4
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -2734,7 +2734,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
     3:   チャッスペースが作成されました。
     4:   .contents.clearfix
@@ -2742,8 +2742,8 @@ ActionView::Template::Error (Illegal nesting: nesting within plain text is illeg
     6:         <div class="side_top">
     7:          <p class="name">ryosikemaehira</p>
     8:         </div>
-    9: 
-  
+    9:
+
 app/views/chatspaces/index.html.haml:6
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -2760,16 +2760,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
     3:   チャッスペースが作成されました。
     4:   .contents.clearfix
-    5:     .class.side
+    5:     .side
     6:         <div class="side_top">
     7:          <p class="name">ryosikemaehira</p>
     8:         </div>
-    9: 
-  
+    9:
+
 app/views/chatspaces/index.html.haml:6
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -2786,16 +2786,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 9 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
-     7:         %p.class.name ryosikemaehira
-     8: 
+     7:         %p.name ryosikemaehira
+     8:
      9:         <div class="side_bottom">
     10:          <p class="message">15px #ffffff</p>
     11:          <p class="re_message">11px #ffffff</p>
     12:          <p class="message">aaaaaaaaa</p>
     13:          <p class="re_message">まだメッセージはありません</p>
-  
+
 app/views/chatspaces/index.html.haml:10
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -2812,16 +2812,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 9 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
-     8: 
+     8:
      9:       .side_bottom
-    10:         %p.class.message 15px #ffffff
+    10:         %p.message 15px #ffffff
     11:          <p class="re_message">11px #ffffff</p>
     12:          <p class="message">aaaaaaaaa</p>
     13:          <p class="re_message">まだメッセージはありません</p>
     14:          <p class="message">sampleグループ</p>
-  
+
 app/views/chatspaces/index.html.haml:11
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -2845,16 +2845,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
-    20:         %p.class.sub_sample 12px #999999
-    21: 
+    20:         %p.sub_sample 12px #999999
+    21:
     22:       .main_center clearfix
-    23:         %p.class.user_name ryosukemaehira  %span.class.time2016/10/02
-    24:         %p.class.reply なるほど
-    25:         %p.class.user_name 16px Bold #434A54
-    26:         %p.class.reply 14px #434A54
-  
+    23:         %p.user_name ryosukemaehira  %span.time2016/10/02
+    24:         %p.reply なるほど
+    25:         %p.user_name 16px Bold #434A54
+    26:         %p.reply 14px #434A54
+
 app/views/chatspaces/index.html.haml:23
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -2871,16 +2871,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
-    20:         %p.class.sub_sample 12px #999999
-    21: 
+    20:         %p.sub_sample 12px #999999
+    21:
     22:       .main_center clearfix
-    23:         %p.class.user_name ryosukemaehira
-    24:         %span.class.time2016/10/02
-    25:         %p.class.reply なるほど
-    26:         %p.class.user_name 16px Bold #434A54
-  
+    23:         %p.user_name ryosukemaehira
+    24:         %span.time2016/10/02
+    25:         %p.reply なるほど
+    26:         %p.user_name 16px Bold #434A54
+
 app/views/chatspaces/index.html.haml:23
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -2897,16 +2897,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
-    20:         %p.class.sub_sample 12px #999999
-    21: 
+    20:         %p.sub_sample 12px #999999
+    21:
     22:       .main_center clearfix
     23:         %p.user_name ryosukemaehira
-    24:         %span.class.time2016/10/02
-    25:         %p.class.reply なるほど
-    26:         %p.class.user_name 16px Bold #434A54
-  
+    24:         %span.time2016/10/02
+    25:         %p.reply なるほど
+    26:         %p.user_name 16px Bold #434A54
+
 app/views/chatspaces/index.html.haml:23
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -2923,16 +2923,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
-    20:         %p.class.sub_sample 12px #999999
-    21: 
+    20:         %p.sub_sample 12px #999999
+    21:
     22:       .main_center clearfix
-    23:         %p.class.user_name ryosukemaehira
-    24:         %span.class.time2016/10/02
-    25:         %p.class.reply なるほど
-    26:         %p.class.user_name 16px Bold #434A54
-  
+    23:         %p.user_name ryosukemaehira
+    24:         %span.time2016/10/02
+    25:         %p.reply なるほど
+    26:         %p.user_name 16px Bold #434A54
+
 app/views/chatspaces/index.html.haml:23
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -2949,16 +2949,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 90ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
-    20:         %p.class.sub_sample 12px #999999
-    21: 
+    20:         %p.sub_sample 12px #999999
+    21:
     22:       .main_center clearfix
-    23:         %p.class.user_name ryosukemaehira
-    24:         %span.class.time2016 2016/10/02
-    25:         %p.class.reply なるほど
-    26:         %p.class.user_name 16px Bold #434A54
-  
+    23:         %p.user_name ryosukemaehira
+    24:         %span.time2016 2016/10/02
+    25:         %p.reply なるほど
+    26:         %p.user_name 16px Bold #434A54
+
 app/views/chatspaces/index.html.haml:23
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -2975,16 +2975,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
-    20:         %p.class.sub_sample 12px #999999
-    21: 
+    20:         %p.sub_sample 12px #999999
+    21:
     22:       .main_center clearfix
-    23:           %p.class.user_name ryosukemaehira
-    24:         %span.class.time2016 2016/10/02
-    25:         %p.class.reply なるほど
-    26:         %p.class.user_name 16px Bold #434A54
-  
+    23:           %p.user_name ryosukemaehira
+    24:         %span.time2016 2016/10/02
+    25:         %p.reply なるほど
+    26:         %p.user_name 16px Bold #434A54
+
 app/views/chatspaces/index.html.haml:23
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3001,16 +3001,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %p and nested within it.):
-    21: 
+    21:
     22:       .main_center clearfix
-    23:       %p.class.user_name ryosukemaehira
-    24:         %span.class.time2016 2016/10/02
-    25:         %p.class.reply なるほど
-    26:         %p.class.user_name 16px Bold #434A54
-    27:         %p.class.reply 14px #434A54
-  
+    23:       %p.user_name ryosukemaehira
+    24:         %span.time2016 2016/10/02
+    25:         %p.reply なるほど
+    26:         %p.user_name 16px Bold #434A54
+    27:         %p.reply 14px #434A54
+
 app/views/chatspaces/index.html.haml:24
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3027,7 +3027,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 119ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -3036,7 +3036,7 @@ ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""):
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/chatspaces.scss:144
 app/assets/stylesheets/application.scss:2
 app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___2770390343210236435_70217662458980'
@@ -3055,16 +3055,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
-    20:         %p.class.sub_sample 12px #999999
-    21: 
+    20:         %p.sub_sample 12px #999999
+    21:
     22:       .main_center clearfix
-    23:         %p.class.user_name ryosukemaehira
-    24:         %span.class.time2016 2016/10/02
-    25:         %p.class.reply なるほど
-    26:         %p.class.user_name 16px Bold #434A54
-  
+    23:         %p.user_name ryosukemaehira
+    24:         %span.time2016 2016/10/02
+    25:         %p.reply なるほど
+    26:         %p.user_name 16px Bold #434A54
+
 app/views/chatspaces/index.html.haml:23
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3081,16 +3081,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
-    20:         %p.class.sub_sample 12px #999999
-    21: 
+    20:         %p.sub_sample 12px #999999
+    21:
     22:       .main_center clearfix
-    23:         .class.user_name ryosukemaehira
-    24:         .class.time2016 2016/10/02
-    25:         .class.reply なるほど
-    26:         .class.user_name 16px Bold #434A54
-  
+    23:         .user_name ryosukemaehira
+    24:         .time2016 2016/10/02
+    25:         .reply なるほど
+    26:         .user_name 16px Bold #434A54
+
 app/views/chatspaces/index.html.haml:23
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3107,16 +3107,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
-    20:         %p.class.sub_sample 12px #999999
-    21: 
+    20:         %p.sub_sample 12px #999999
+    21:
     22:       .main_center clearfix
-    23:         .class.user_name ryosukemaehira
-    24:         .class.time2016 2016/10/02
-    25:         .class.reply なるほど
-    26:         .class.user_name 16px Bold #434A54
-  
+    23:         .user_name ryosukemaehira
+    24:         .time2016 2016/10/02
+    25:         .reply なるほど
+    26:         .user_name 16px Bold #434A54
+
 app/views/chatspaces/index.html.haml:23
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3133,7 +3133,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 74ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -3142,7 +3142,7 @@ ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""):
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/chatspaces.scss:144
 app/assets/stylesheets/application.scss:2
 app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___2770390343210236435_70217662427160'
@@ -3322,16 +3322,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 641ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `edit_user_registration_path' for #<#<Class:0x007feecda786e0>:0x007feecfc6b658>):
      6:       .side_top
-     7:         .class.side_top_box
-     8:           .class.name.fa_icon ryousukemaehira
+     7:         .side_top_box
+     8:           .name.fa_icon ryousukemaehira
      9:           = link_to edit_user_registration_path .fa.fa-cog
     10:           = link_to edit_user_registration_path i.fa.fa-cog
-    11: 
+    11:
     12:       .side_bottom
-  
+
 app/views/chatspaces/index.html.haml:9:in `_app_views_chatspaces_index_html_haml___3423544195840200610_70331832440800'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3425,16 +3425,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 108ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `fa' for "<a href=\"/chatspaces\">/chatspaces</a>":ActiveSupport::SafeBuffer):
-     7:         .class.side_top_message_box
-     8:           .class.name.fa_icon ryousukemaehira
-     9:         .class.icon_box
+     7:         .side_top_message_box
+     8:           .name.fa_icon ryousukemaehira
+     9:         .icon_box
     10:           = link_to.fa.fa-cog
     11:           = link_to.fa.fa-edit
-    12: 
-    13: 
-  
+    12:
+    13:
+
 app/views/chatspaces/index.html.haml:10:in `_app_views_chatspaces_index_html_haml___3423544195840200610_70331796154420'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3451,16 +3451,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `fa' for "<a href=\"/chatspaces\">/chatspaces</a>":ActiveSupport::SafeBuffer):
-     7:         .class.side_top_message_box
-     8:           .class.name.fa_icon ryousukemaehira
-     9:         .class.icon_box
+     7:         .side_top_message_box
+     8:           .name.fa_icon ryousukemaehira
+     9:         .icon_box
     10:           = link_to.fa-cog
     11:           = link_to.fa-edit
-    12: 
-    13: 
-  
+    12:
+    13:
+
 app/views/chatspaces/index.html.haml:10:in `_app_views_chatspaces_index_html_haml___3423544195840200610_70331852869980'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3477,16 +3477,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `fa_cog' for "<a href=\"/chatspaces\">/chatspaces</a>":ActiveSupport::SafeBuffer):
-     7:         .class.side_top_message_box
-     8:           .class.name.fa_icon ryousukemaehira
-     9:         .class.icon_box
+     7:         .side_top_message_box
+     8:           .name.fa_icon ryousukemaehira
+     9:         .icon_box
     10:           = link_to.fa_cog
     11:           = link_to.fa_edit
-    12: 
-    13: 
-  
+    12:
+    13:
+
 app/views/chatspaces/index.html.haml:10:in `_app_views_chatspaces_index_html_haml___3423544195840200610_70331861689240'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3503,16 +3503,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `fa_cog' for "<a href=\"/chatspaces\">/chatspaces</a>":ActiveSupport::SafeBuffer):
-     7:         .class.side_top_message_box
-     8:           .class.name.fa_icon ryousukemaehira
-     9:         .class.icon_box
+     7:         .side_top_message_box
+     8:           .name.fa_icon ryousukemaehira
+     9:         .icon_box
     10:           = link_to.fa_cog 'application', 'data-turbolinks-track'
     11:           = link_to.fa_edit 'application', 'data-turbolinks-track'
-    12: 
-    13: 
-  
+    12:
+    13:
+
 app/views/chatspaces/index.html.haml:10:in `_app_views_chatspaces_index_html_haml___3423544195840200610_70331840681260'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -3529,7 +3529,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:10: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
 ...html_escape((( link_to.fa-cog 'application', 'data-turbolink...
 ...                               ^
@@ -3542,7 +3542,7 @@ SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.ham
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:11: syntax error, unexpected ',', expecting ')'
 ... link_to.fa-edit 'application', 'data-turbolinks-track'
 ...                               ^):
-  
+
 app/views/chatspaces/index.html.haml:10: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
 app/views/chatspaces/index.html.haml:10: syntax error, unexpected ',', expecting ')'
 app/views/chatspaces/index.html.haml:11: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
@@ -3562,7 +3562,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:10: syntax error, unexpected ',', expecting ')'
 ::Haml::Helpers.html_escape((( link_to.fa-cog, = link_to.fa-edit,
                                               ^
@@ -3574,7 +3574,7 @@ SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.ham
 ...uffer.upper if @haml_buffer;end;
 ...                               ^
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:45: syntax error, unexpected keyword_end, expecting ')'):
-  
+
 app/views/chatspaces/index.html.haml:10: syntax error, unexpected ',', expecting ')'
 app/views/chatspaces/index.html.haml:10: syntax error, unexpected ',', expecting ')'
 app/views/chatspaces/index.html.haml:42: syntax error, unexpected keyword_ensure, expecting ')'
@@ -3700,7 +3700,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -3709,7 +3709,7 @@ ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""):
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/chatspaces.scss:164
 app/assets/stylesheets/application.scss:2
 app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___280311643149088792_70331842535880'
@@ -3770,7 +3770,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 190ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "background-color": expected ";", was ": #2f3e51;"):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -3779,7 +3779,7 @@ ActionView::Template::Error (Invalid CSS after "background-color": expected ";",
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/chatspaces.scss:106
 app/assets/stylesheets/application.scss:2
 app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___280311643149088792_70331832339860'
@@ -3854,7 +3854,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 81ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -3863,7 +3863,7 @@ ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""):
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/chatspaces.scss:178
 app/assets/stylesheets/application.scss:2
 app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___280311643149088792_70331842439960'
@@ -4155,7 +4155,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 141ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:29: syntax error, unexpected tLABEL
 ...ml::Helpers.html_escape(((http://test-aflat.com/buttonmaker/...
 ...                               ^
@@ -4166,7 +4166,7 @@ SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.ham
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:29: syntax error, unexpected tINTEGER, expecting ')'
 ...maker/images-user/39.110.211.37.gif?1501931731
 ...                               ^):
-  
+
 app/views/chatspaces/index.html.haml:29: syntax error, unexpected tLABEL
 app/views/chatspaces/index.html.haml:29: unknown regexp options - tt
 app/views/chatspaces/index.html.haml:29: unexpected fraction part after numeric literal
@@ -4193,7 +4193,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 84ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "    .img": expected "{", was "}"):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -4202,7 +4202,7 @@ ActionView::Template::Error (Invalid CSS after "    .img": expected "{", was "}"
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/chatspaces.scss:154
 app/assets/stylesheets/application.scss:2
 app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___280311643149088792_70331854379120'
@@ -4221,7 +4221,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "    .img": expected "{", was "}"):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -4230,7 +4230,7 @@ ActionView::Template::Error (Invalid CSS after "    .img": expected "{", was "}"
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/chatspaces.scss:152
 app/assets/stylesheets/application.scss:2
 app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___280311643149088792_70331861251080'
@@ -4249,7 +4249,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "    .img": expected "{", was "}"):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -4258,7 +4258,7 @@ ActionView::Template::Error (Invalid CSS after "    .img": expected "{", was "}"
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/chatspaces.scss:153
 app/assets/stylesheets/application.scss:2
 app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___280311643149088792_70331790941500'
@@ -4285,9 +4285,9 @@ Completed 200 OK in 184ms (Views: 174.6ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/images/edit.button" for 127.0.0.1 at 2017-08-05 20:37:11 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/edit.button"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -4329,7 +4329,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 147ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "    img": expected "{", was "}"):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -4338,7 +4338,7 @@ ActionView::Template::Error (Invalid CSS after "    img": expected "{", was "}")
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/chatspaces.scss:153
 app/assets/stylesheets/application.scss:2
 app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___280311643149088792_70331832111620'
@@ -4357,7 +4357,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 85ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "    .img": expected "{", was "}"):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -4366,7 +4366,7 @@ ActionView::Template::Error (Invalid CSS after "    .img": expected "{", was "}"
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/chatspaces.scss:153
 app/assets/stylesheets/application.scss:2
 app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___280311643149088792_70331816415460'
@@ -4386,9 +4386,9 @@ Completed 200 OK in 538ms (Views: 535.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/images/edit.button" for 127.0.0.1 at 2017-08-05 20:38:11 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/edit.button"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -4528,7 +4528,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "height": expected ";", was ": 100%;"):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -4537,7 +4537,7 @@ ActionView::Template::Error (Invalid CSS after "height": expected ";", was ": 10
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/chatspaces.scss:128
 app/assets/stylesheets/application.scss:2
 app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___280311643149088792_70331859520960'
@@ -4913,7 +4913,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 214ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "    float: right": expected "{", was ";"):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -4922,7 +4922,7 @@ ActionView::Template::Error (Invalid CSS after "    float: right": expected "{",
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/chatspaces.scss:283
 app/assets/stylesheets/application.scss:2
 app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___280311643149088792_70331839273920'
@@ -4941,7 +4941,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 109ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "    float: right": expected "{", was ";"):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -4950,7 +4950,7 @@ ActionView::Template::Error (Invalid CSS after "    float: right": expected "{",
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/chatspaces.scss:284
 app/assets/stylesheets/application.scss:2
 app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___280311643149088792_70331852600980'
@@ -5025,17 +5025,17 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 755ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `images' for #<#<Class:0x007feecda786e0>:0x007feed24a7e00>
 Did you mean?  image_url):
-    28:         %h1.class.title SAMPLEグループ
-    29:         .class.sub_sample 12px #999999
+    28:         %h1.title SAMPLEグループ
+    29:         .sub_sample 12px #999999
     30:       .header_box2
     31:         %img{src= images/logo.png}
-    32: 
+    32:
     33:     .main_center.papa
     34:       .main_center_box1
-  
+
 app/views/chatspaces/index.html.haml:31:in `_app_views_chatspaces_index_html_haml___3423544195840200610_70331853530160'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -5052,17 +5052,17 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 482ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `images' for #<#<Class:0x007feecda786e0>:0x007feed0d624e8>
 Did you mean?  image_url):
-    28:         %h1.class.title SAMPLEグループ
-    29:         .class.sub_sample 12px #999999
+    28:         %h1.title SAMPLEグループ
+    29:         .sub_sample 12px #999999
     30:       .header_box2
     31:         %img{src: images/logo.png}
-    32: 
+    32:
     33:     .main_center.papa
     34:       .main_center_box1
-  
+
 app/views/chatspaces/index.html.haml:31:in `_app_views_chatspaces_index_html_haml___3423544195840200610_70331841347920'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -5079,17 +5079,17 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 643ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `images' for #<#<Class:0x007feecda786e0>:0x007feecadf00f0>
 Did you mean?  image_url):
-    28:         %h1.class.title SAMPLEグループ
-    29:         .class.sub_sample 12px #999999
+    28:         %h1.title SAMPLEグループ
+    29:         .sub_sample 12px #999999
     30:       .header_box2
     31:         %img{src: images/edit.gif}
-    32: 
+    32:
     33:     .main_center.papa
     34:       .main_center_box1
-  
+
 app/views/chatspaces/index.html.haml:31:in `_app_views_chatspaces_index_html_haml___3423544195840200610_70331791279680'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -5276,15 +5276,15 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Inconsistent indentation: 6 spaces used for indentation, but the rest of the document was indented using 4 spaces.):
     1: .side
     2:     .side_top
-    3:       .class.side_top_message_box
-    4:         .class.name ryousukemaehira
-    5:       .class.icon_box
+    3:       .side_top_message_box
+    4:         .name ryousukemaehira
+    5:       .icon_box
     6:         .fa.fa-cog
-  
+
 app/views/chatspaces/_side.html.haml:3
 app/views/chatspaces/index.html.haml:5:in `_app_views_chatspaces_index_html_haml___3423544195840200610_70331789706500'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -5310,13 +5310,13 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
     36:         .fa.fa-file-image-o
-    37:       .class.bottom_sent_button
+    37:       .bottom_sent_button
     38:         .p href="#"
     39:           class="icon-circle-arrow-right" Sent
-  
+
 app/views/chatspaces/index.html.haml:39
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -5333,13 +5333,13 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
     36:         .fa.fa-file-image-o
-    37:       .class.bottom_sent_button
+    37:       .bottom_sent_button
     38:         .p href="#"
-    39:           .class="icon-circle-arrow-right" Sent
-  
+    39:           ="icon-circle-arrow-right" Sent
+
 app/views/chatspaces/index.html.haml:39
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -5373,13 +5373,13 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 138ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Sent):
-    35:         .class.bottom_message type a message
+    35:         .bottom_message type a message
     36:         .fa.fa-file-image-o
-    37:       .class.bottom_sent_button
+    37:       .bottom_sent_button
     38:         =link_to Sent,""
-  
+
 app/views/chatspaces/index.html.haml:38:in `_app_views_chatspaces_index_html_haml___3423544195840200610_70331860654760'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -5477,16 +5477,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
-    3:     .class.side_top_message_box
-    4:       .class.name ryousukemaehira
-    5:     .class.icon_box
-    6:       =link_to .class:"icon_box" do
+    3:     .side_top_message_box
+    4:       .name ryousukemaehira
+    5:     .icon_box
+    6:       =link_to :"icon_box" do
     7:         =fa_icon 'cog'
     8:       .fa.fa-edit
-    9: 
-  
+    9:
+
 app/views/chatspaces/_side.html.haml:6:in `class'
 app/views/chatspaces/_side.html.haml:6:in `_app_views_chatspaces__side_html_haml__2467560347716639482_70331789725320'
 app/views/chatspaces/index.html.haml:5:in `_app_views_chatspaces_index_html_haml___3423544195840200610_70331833787720'
@@ -5506,16 +5506,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 447ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `root' for #<#<Class:0x007feecda786e0>:0x007feecd870500>):
-    3:     .class.side_top_message_box
-    4:       .class.name ryousukemaehira
-    5:     .class.icon_box
+    3:     .side_top_message_box
+    4:       .name ryousukemaehira
+    5:     .icon_box
     6:       =link_to  root. class:"icon_box" do
     7:         =fa_icon 'cog'
     8:       .fa.fa-edit
-    9: 
-  
+    9:
+
 app/views/chatspaces/_side.html.haml:6:in `_app_views_chatspaces__side_html_haml__2467560347716639482_70331831701280'
 app/views/chatspaces/index.html.haml:5:in `_app_views_chatspaces_index_html_haml___3423544195840200610_70331813594520'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -5534,17 +5534,17 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 429ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `root_path' for #<#<Class:0x007feecda786e0>:0x007feecb846158>
 Did you mean?  font_path):
-    3:     .class.side_top_message_box
-    4:       .class.name ryousukemaehira
-    5:     .class.icon_box
+    3:     .side_top_message_box
+    4:       .name ryousukemaehira
+    5:     .icon_box
     6:       =link_to  root_path. class:"icon_box" do
     7:         =fa_icon 'cog'
     8:       .fa.fa-edit
-    9: 
-  
+    9:
+
 app/views/chatspaces/_side.html.haml:6:in `_app_views_chatspaces__side_html_haml__2467560347716639482_70331817300520'
 app/views/chatspaces/index.html.haml:5:in `_app_views_chatspaces_index_html_haml___3423544195840200610_70331802716060'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -5563,17 +5563,17 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 423ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `root_path' for #<#<Class:0x007feecda786e0>:0x007feecffd7c60>
 Did you mean?  font_path):
-    3:     .class.side_top_message_box
-    4:       .class.name ryousukemaehira
-    5:     .class.icon_box
+    3:     .side_top_message_box
+    4:       .name ryousukemaehira
+    5:     .icon_box
     6:       =link_to  root_path. class:"icon_box" do
     7:         =fa_icon 'cog'
     8:       .fa.fa-edit
-    9: 
-  
+    9:
+
 app/views/chatspaces/_side.html.haml:6:in `_app_views_chatspaces__side_html_haml__2467560347716639482_70331861584700'
 app/views/chatspaces/index.html.haml:5:in `_app_views_chatspaces_index_html_haml___3423544195840200610_70331853308940'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -5592,13 +5592,13 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/_side.html.haml:6: syntax error, unexpected tSYMBEG, expecting keyword_end
 ...ps://www.google.co.jp". class:"icon_box" do
 ...                               ^
 /Users/tomi/projects/chat-space/app/views/chatspaces/_side.html.haml:6: syntax error, unexpected keyword_do, expecting keyword_end
 /Users/tomi/projects/chat-space/app/views/chatspaces/_side.html.haml:20: syntax error, unexpected keyword_ensure, expecting end-of-input):
-  
+
 app/views/chatspaces/_side.html.haml:6: syntax error, unexpected tSYMBEG, expecting keyword_end
 app/views/chatspaces/_side.html.haml:6: syntax error, unexpected keyword_do, expecting keyword_end
 app/views/chatspaces/_side.html.haml:20: syntax error, unexpected keyword_ensure, expecting end-of-input
@@ -5619,13 +5619,13 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/_side.html.haml:6: syntax error, unexpected tSYMBEG, expecting =>
 ...ps://www.google.co.jp". class:"icon_box" do
 ...                               ^
 /Users/tomi/projects/chat-space/app/views/chatspaces/_side.html.haml:6: syntax error, unexpected keyword_do_block, expecting keyword_end
 /Users/tomi/projects/chat-space/app/views/chatspaces/_side.html.haml:20: syntax error, unexpected keyword_ensure, expecting end-of-input):
-  
+
 app/views/chatspaces/_side.html.haml:6: syntax error, unexpected tSYMBEG, expecting =>
 app/views/chatspaces/_side.html.haml:6: syntax error, unexpected keyword_do_block, expecting keyword_end
 app/views/chatspaces/_side.html.haml:20: syntax error, unexpected keyword_ensure, expecting end-of-input
@@ -5646,13 +5646,13 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/_side.html.haml:6: syntax error, unexpected tSYMBEG, expecting keyword_end
 haml_temp = link_to url: "www.google.co.jp". class:"icon_box" do
                                                     ^
 /Users/tomi/projects/chat-space/app/views/chatspaces/_side.html.haml:6: syntax error, unexpected keyword_do, expecting keyword_end
 /Users/tomi/projects/chat-space/app/views/chatspaces/_side.html.haml:20: syntax error, unexpected keyword_ensure, expecting end-of-input):
-  
+
 app/views/chatspaces/_side.html.haml:6: syntax error, unexpected tSYMBEG, expecting keyword_end
 app/views/chatspaces/_side.html.haml:6: syntax error, unexpected keyword_do, expecting keyword_end
 app/views/chatspaces/_side.html.haml:20: syntax error, unexpected keyword_ensure, expecting end-of-input
@@ -5673,16 +5673,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
-    3:     .class.side_top_message_box
-    4:       .class.name ryousukemaehira
-    5:     .class.icon_box
+    3:     .side_top_message_box
+    4:       .name ryousukemaehira
+    5:     .icon_box
     6:       =link_to "www.google.co.jp". class:"icon_box" do
     7:         =fa_icon 'cog'
     8:       .fa.fa-edit
-    9: 
-  
+    9:
+
 app/views/chatspaces/_side.html.haml:6:in `class'
 app/views/chatspaces/_side.html.haml:6:in `_app_views_chatspaces__side_html_haml__2467560347716639482_70331859744480'
 app/views/chatspaces/index.html.haml:5:in `_app_views_chatspaces_index_html_haml___3423544195840200610_70331860313340'
@@ -5702,16 +5702,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
-    3:     .class.side_top_message_box
-    4:       .class.name ryousukemaehira
-    5:     .class.icon_box
+    3:     .side_top_message_box
+    4:       .name ryousukemaehira
+    5:     .icon_box
     6:       =link_to chatspaces_path. class:"icon_box" do
     7:         =fa_icon 'cog'
     8:       .fa.fa-edit
-    9: 
-  
+    9:
+
 app/views/chatspaces/_side.html.haml:6:in `class'
 app/views/chatspaces/_side.html.haml:6:in `_app_views_chatspaces__side_html_haml___749687954193948235_70164519815220'
 app/views/chatspaces/index.html.haml:5:in `_app_views_chatspaces_index_html_haml___1308406091404180455_70164485356620'
@@ -5731,16 +5731,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
-    3:     .class.side_top_message_box
-    4:       .class.name ryousukemaehira
-    5:     .class.icon_box
+    3:     .side_top_message_box
+    4:       .name ryousukemaehira
+    5:     .icon_box
     6:       =link_to . class:"icon_box" do
     7:         =fa_icon 'cog'
     8:       .fa.fa-edit
-    9: 
-  
+    9:
+
 app/views/chatspaces/_side.html.haml:6:in `class'
 app/views/chatspaces/_side.html.haml:6:in `_app_views_chatspaces__side_html_haml___749687954193948235_70164520488520'
 app/views/chatspaces/index.html.haml:5:in `_app_views_chatspaces_index_html_haml___1308406091404180455_70164515705240'
@@ -5804,17 +5804,17 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 202ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `index_path' for #<#<Class:0x007fa0e2735cf0>:0x007fa0e6687908>
 Did you mean?  video_path):
-    3:     .class.side_top_message_box
-    4:       .class.name ryousukemaehira
-    5:     .class.icon_box
+    3:     .side_top_message_box
+    4:       .name ryousukemaehira
+    5:     .icon_box
     6:       =link_to :index, class:"icon_box" do
     7:         =fa_icon 'cog'
     8:       .fa.fa-edit
-    9: 
-  
+    9:
+
 app/views/chatspaces/_side.html.haml:6:in `_app_views_chatspaces__side_html_haml___749687954193948235_70164545535840'
 app/views/chatspaces/index.html.haml:5:in `_app_views_chatspaces_index_html_haml___1308406091404180455_70164541694840'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -5834,17 +5834,17 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 176ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `index_path' for #<#<Class:0x007fa0e2735cf0>:0x007fa0e66ef440>
 Did you mean?  video_path):
-    3:     .class.side_top_message_box
-    4:       .class.name ryousukemaehira
-    5:     .class.icon_box
+    3:     .side_top_message_box
+    4:       .name ryousukemaehira
+    5:     .icon_box
     6:       =link_to :index, class:"icon_box" do
     7:         =fa_icon 'cog'
     8:       .fa.fa-edit
-    9: 
-  
+    9:
+
 app/views/chatspaces/_side.html.haml:6:in `_app_views_chatspaces__side_html_haml___749687954193948235_70164541632200'
 app/views/chatspaces/index.html.haml:5:in `_app_views_chatspaces_index_html_haml___1308406091404180455_70164518764260'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -5864,16 +5864,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 376ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `index' for #<#<Class:0x007fa0e2735cf0>:0x007fa0e2726638>):
-    3:     .class.side_top_message_box
-    4:       .class.name ryousukemaehira
-    5:     .class.icon_box
+    3:     .side_top_message_box
+    4:       .name ryousukemaehira
+    5:     .icon_box
     6:       =link_to index, class:"icon_box" do
     7:         =fa_icon 'cog'
     8:       .fa.fa-edit
-    9: 
-  
+    9:
+
 app/views/chatspaces/_side.html.haml:6:in `_app_views_chatspaces__side_html_haml___749687954193948235_70164486762020'
 app/views/chatspaces/index.html.haml:5:in `_app_views_chatspaces_index_html_haml___1308406091404180455_70164485339520'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
@@ -5894,9 +5894,9 @@ Completed 200 OK in 76ms (Views: 73.8ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/www.google.com" for 127.0.0.1 at 2017-08-07 15:33:32 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/www.google.com"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -5932,9 +5932,9 @@ puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (181.1ms)
 Started GET "/www.google.com" for 127.0.0.1 at 2017-08-07 15:33:36 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/www.google.com"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -5986,7 +5986,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:15: syntax error, unexpected ')'
 )).to_s);).to_s);; _hamlout.bu...
  ^
@@ -5995,7 +5995,7 @@ SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.ham
 ...                               ^
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:39: syntax error, unexpected keyword_ensure, expecting ')'
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:41: syntax error, unexpected keyword_end, expecting ')'):
-  
+
 app/views/chatspaces/index.html.haml:15: syntax error, unexpected ')'
 app/views/chatspaces/index.html.haml:38: syntax error, unexpected keyword_ensure, expecting keyword_end
 app/views/chatspaces/index.html.haml:39: syntax error, unexpected keyword_ensure, expecting ')'
@@ -6025,13 +6025,13 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
-    36:         .class.bottom_message type a message
+    36:         .bottom_message type a message
     37:         .fa.fa-file-image-o
-    38:       .class.bottom_sent_button Sent
+    38:       .bottom_sent_button Sent
     39:         =link_to Sent "www.google.com", class: "bottom_sent_button" do
-  
+
 app/views/chatspaces/index.html.haml:39
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -6049,13 +6049,13 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
-    36:         .class.bottom_message type a message
+    36:         .bottom_message type a message
     37:         .fa.fa-file-image-o
-    38:       .class.bottom_sent_button Sent
+    38:       .bottom_sent_button Sent
     39:         =link_to Sent, "www.google.com", class: "bottom_sent_button" do
-  
+
 app/views/chatspaces/index.html.haml:39
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -6073,7 +6073,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:40: syntax error, unexpected ')'
 )).to_s);).to_s);; _hamlout.bu...
  ^
@@ -6082,7 +6082,7 @@ SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.ham
 ...                               ^
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:41: syntax error, unexpected keyword_ensure, expecting ')'
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_end, expecting ')'):
-  
+
 app/views/chatspaces/index.html.haml:40: syntax error, unexpected ')'
 app/views/chatspaces/index.html.haml:40: syntax error, unexpected keyword_ensure, expecting keyword_end
 app/views/chatspaces/index.html.haml:41: syntax error, unexpected keyword_ensure, expecting ')'
@@ -6103,7 +6103,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:39: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
 ...e(((link_to , "www.google.com", class: "bottom_sent_button" ...
 ...                               ^
@@ -6115,7 +6115,7 @@ SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.ham
 ...uffer.upper if @haml_buffer;end;
 ...                               ^
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_end, expecting ')'):
-  
+
 app/views/chatspaces/index.html.haml:39: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
 app/views/chatspaces/index.html.haml:39: syntax error, unexpected keyword_do, expecting ')'
 app/views/chatspaces/index.html.haml:40: syntax error, unexpected keyword_ensure, expecting ')'
@@ -6137,7 +6137,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:40: syntax error, unexpected ')'
 )).to_s);).to_s);; _hamlout.bu...
  ^
@@ -6146,7 +6146,7 @@ SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.ham
 ...                               ^
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:41: syntax error, unexpected keyword_ensure, expecting ')'
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_end, expecting ')'):
-  
+
 app/views/chatspaces/index.html.haml:40: syntax error, unexpected ')'
 app/views/chatspaces/index.html.haml:40: syntax error, unexpected keyword_ensure, expecting keyword_end
 app/views/chatspaces/index.html.haml:41: syntax error, unexpected keyword_ensure, expecting ')'
@@ -6167,7 +6167,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:40: syntax error, unexpected ')'
 )).to_s);).to_s);; _hamlout.bu...
  ^
@@ -6176,7 +6176,7 @@ SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.ham
 ...                               ^
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:41: syntax error, unexpected keyword_ensure, expecting ')'
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_end, expecting ')'):
-  
+
 app/views/chatspaces/index.html.haml:40: syntax error, unexpected ')'
 app/views/chatspaces/index.html.haml:40: syntax error, unexpected keyword_ensure, expecting keyword_end
 app/views/chatspaces/index.html.haml:41: syntax error, unexpected keyword_ensure, expecting ')'
@@ -6205,14 +6205,14 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `stringify_keys' for "www.google.com":String):
-    36:         .class.bottom_message type a message
+    36:         .bottom_message type a message
     37:         .fa.fa-file-image-o
-    38:       .class.bottom_sent_button
+    38:       .bottom_sent_button
     39:         =link_to "Sent","www.google.com", class: "bottom_sent_button" do
     40:           / =button_to "Sent"
-  
+
 app/views/chatspaces/index.html.haml:39:in `_app_views_chatspaces_index_html_haml___1308406091404180455_70164543316580'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -6230,14 +6230,14 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `stringify_keys' for "www.google.com":String):
-    36:         .class.bottom_message type a message
+    36:         .bottom_message type a message
     37:         .fa.fa-file-image-o
-    38:       .class.bottom_sent_button
+    38:       .bottom_sent_button
     39:         =link_to"Sent","www.google.com", class: "bottom_sent_button" do
     40:           / =button_to "Sent"
-  
+
 app/views/chatspaces/index.html.haml:39:in `_app_views_chatspaces_index_html_haml___1308406091404180455_70164500014920'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -6254,13 +6254,13 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:39: syntax error, unexpected tLABEL
 ...toSent,"www.google.com", class: "bottom_sent_button" do
 ...                               ^
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:39: syntax error, unexpected keyword_do, expecting keyword_end
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:41: syntax error, unexpected keyword_ensure, expecting end-of-input):
-  
+
 app/views/chatspaces/index.html.haml:39: syntax error, unexpected tLABEL
 app/views/chatspaces/index.html.haml:39: syntax error, unexpected keyword_do, expecting keyword_end
 app/views/chatspaces/index.html.haml:41: syntax error, unexpected keyword_ensure, expecting end-of-input
@@ -6280,14 +6280,14 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Sent):
-    36:         .class.bottom_message type a message
+    36:         .bottom_message type a message
     37:         .fa.fa-file-image-o
-    38:       .class.bottom_sent_button
+    38:       .bottom_sent_button
     39:         =link_to Sent,"www.google.com", class: "bottom_sent_button" do
     40:           =button_to "Sent"
-  
+
 app/views/chatspaces/index.html.haml:39:in `_app_views_chatspaces_index_html_haml___1308406091404180455_70164553643760'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -6305,15 +6305,15 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 206ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `Sent' for #<#<Class:0x007fa0e2735cf0>:0x007fa0e91881e8>
 Did you mean?  send):
-    36:         .class.bottom_message type a message
+    36:         .bottom_message type a message
     37:         .fa.fa-file-image-o
-    38:       .class.bottom_sent_button
+    38:       .bottom_sent_button
     39:         =link_to Sent "www.google.com", class: "bottom_sent_button" do
     40:           =button_to "Sent"
-  
+
 app/views/chatspaces/index.html.haml:39:in `_app_views_chatspaces_index_html_haml___1308406091404180455_70164541097440'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -6338,16 +6338,16 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
     34:     .main_bottom.papa
-    35:       .class.bottom_message_box
-    36:         .class.bottom_message type a message
+    35:       .bottom_message_box
+    36:         .bottom_message type a message
     37:           =link_to "www.google.com", class "bottom_message"
     38:             =fa_icon 'image-o'
-    39:       .class.bottom_sent_button
+    39:       .bottom_sent_button
     40:         =link_to "www.google.com", class: "bottom_sent_button" do
-  
+
 app/views/chatspaces/index.html.haml:37
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -6364,10 +6364,10 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:38: syntax error, unexpected '\n', expecting &. or :: or '[' or '.'
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:44: syntax error, unexpected keyword_ensure, expecting end-of-input):
-  
+
 app/views/chatspaces/index.html.haml:38: syntax error, unexpected '\n', expecting &. or :: or '[' or '.'
 app/views/chatspaces/index.html.haml:44: syntax error, unexpected keyword_ensure, expecting end-of-input
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
@@ -6385,9 +6385,9 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:44: syntax error, unexpected keyword_ensure, expecting end-of-input):
-  
+
 app/views/chatspaces/index.html.haml:44: syntax error, unexpected keyword_ensure, expecting end-of-input
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -6404,7 +6404,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:42: syntax error, unexpected ')'
 )).to_s);).to_s);; _hamlout.bu...
  ^
@@ -6413,7 +6413,7 @@ SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.ham
 ...                               ^
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting ')'
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:45: syntax error, unexpected keyword_end, expecting ')'):
-  
+
 app/views/chatspaces/index.html.haml:42: syntax error, unexpected ')'
 app/views/chatspaces/index.html.haml:42: syntax error, unexpected keyword_ensure, expecting keyword_end
 app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting ')'
@@ -6433,9 +6433,9 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:44: syntax error, unexpected keyword_ensure, expecting end-of-input):
-  
+
 app/views/chatspaces/index.html.haml:44: syntax error, unexpected keyword_ensure, expecting end-of-input
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -6452,9 +6452,9 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:44: syntax error, unexpected keyword_ensure, expecting end-of-input):
-  
+
 app/views/chatspaces/index.html.haml:44: syntax error, unexpected keyword_ensure, expecting end-of-input
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -6471,7 +6471,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 72ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:42: syntax error, unexpected ')'
 )).to_s);).to_s);; _hamlout.bu...
  ^
@@ -6480,7 +6480,7 @@ SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.ham
 ...                               ^
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting ')'
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:45: syntax error, unexpected keyword_end, expecting ')'):
-  
+
 app/views/chatspaces/index.html.haml:42: syntax error, unexpected ')'
 app/views/chatspaces/index.html.haml:42: syntax error, unexpected keyword_ensure, expecting keyword_end
 app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting ')'
@@ -6500,7 +6500,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:42: syntax error, unexpected ')'
 )).to_s);).to_s);; _hamlout.bu...
  ^
@@ -6509,7 +6509,7 @@ SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.ham
 ...                               ^
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting ')'
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:45: syntax error, unexpected keyword_end, expecting ')'):
-  
+
 app/views/chatspaces/index.html.haml:42: syntax error, unexpected ')'
 app/views/chatspaces/index.html.haml:42: syntax error, unexpected keyword_ensure, expecting keyword_end
 app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting ')'
@@ -6529,9 +6529,9 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:41: syntax error, unexpected keyword_ensure, expecting end-of-input):
-  
+
 app/views/chatspaces/index.html.haml:41: syntax error, unexpected keyword_ensure, expecting end-of-input
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -6548,9 +6548,9 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:41: syntax error, unexpected keyword_ensure, expecting end-of-input):
-  
+
 app/views/chatspaces/index.html.haml:41: syntax error, unexpected keyword_ensure, expecting end-of-input
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -6567,9 +6567,9 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:41: syntax error, unexpected keyword_ensure, expecting end-of-input):
-  
+
 app/views/chatspaces/index.html.haml:41: syntax error, unexpected keyword_ensure, expecting end-of-input
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -6586,7 +6586,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:42: syntax error, unexpected ')'
 )).to_s);).to_s);; _hamlout.bu...
  ^
@@ -6595,7 +6595,7 @@ SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.ham
 ...                               ^
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting ')'
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:45: syntax error, unexpected keyword_end, expecting ')'):
-  
+
 app/views/chatspaces/index.html.haml:42: syntax error, unexpected ')'
 app/views/chatspaces/index.html.haml:42: syntax error, unexpected keyword_ensure, expecting keyword_end
 app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting ')'
@@ -6615,9 +6615,9 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting end-of-input):
-  
+
 app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting end-of-input
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -6634,9 +6634,9 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting end-of-input):
-  
+
 app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting end-of-input
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -6653,9 +6653,9 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting end-of-input):
-  
+
 app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting end-of-input
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -6672,9 +6672,9 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting end-of-input):
-  
+
 app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting end-of-input
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -6699,9 +6699,9 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:41: syntax error, unexpected keyword_ensure, expecting end-of-input):
-  
+
 app/views/chatspaces/index.html.haml:41: syntax error, unexpected keyword_ensure, expecting end-of-input
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -6718,7 +6718,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:42: syntax error, unexpected ')'
 )).to_s);).to_s);; _hamlout.bu...
  ^
@@ -6727,7 +6727,7 @@ SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.ham
 ...                               ^
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting ')'
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:45: syntax error, unexpected keyword_end, expecting ')'):
-  
+
 app/views/chatspaces/index.html.haml:42: syntax error, unexpected ')'
 app/views/chatspaces/index.html.haml:42: syntax error, unexpected keyword_ensure, expecting keyword_end
 app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting ')'
@@ -6747,7 +6747,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:42: syntax error, unexpected ')'
 )).to_s);).to_s);; _hamlout.bu...
  ^
@@ -6756,7 +6756,7 @@ SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.ham
 ...                               ^
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting ')'
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:45: syntax error, unexpected keyword_end, expecting ')'):
-  
+
 app/views/chatspaces/index.html.haml:42: syntax error, unexpected ')'
 app/views/chatspaces/index.html.haml:42: syntax error, unexpected keyword_ensure, expecting keyword_end
 app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting ')'
@@ -6776,7 +6776,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:42: syntax error, unexpected ')'
 )).to_s);).to_s);; _hamlout.bu...
  ^
@@ -6785,7 +6785,7 @@ SyntaxError (/Users/tomi/projects/chat-space/app/views/chatspaces/index.html.ham
 ...                               ^
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting ')'
 /Users/tomi/projects/chat-space/app/views/chatspaces/index.html.haml:45: syntax error, unexpected keyword_end, expecting ')'):
-  
+
 app/views/chatspaces/index.html.haml:42: syntax error, unexpected ')'
 app/views/chatspaces/index.html.haml:42: syntax error, unexpected keyword_ensure, expecting keyword_end
 app/views/chatspaces/index.html.haml:43: syntax error, unexpected keyword_ensure, expecting ')'
@@ -6814,14 +6814,14 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `stringify_keys' for "www.google.com":String):
     38:           = link_to "www.google.com", class: "bottom_icon" do
     39:             = fa_icon 'image-o'
-    40:       .class.bottom_sent_button
+    40:       .bottom_sent_button
     41:         = link_to "Sent","www.google.com", class: "bottom_sent_button" do
     42:           Send
-  
+
 app/views/chatspaces/index.html.haml:41:in `_app_views_chatspaces_index_html_haml___1308406091404180455_70164545737360'
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
   Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
@@ -7159,7 +7159,7 @@ Processing by ChatspacesController#index as HTML
 Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "    color: white": expected "{", was ";"):
     4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     5:     %title ChatSpace
@@ -7168,7 +7168,7 @@ ActionView::Template::Error (Invalid CSS after "    color: white": expected "{",
     8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     9:   %body
    10:     = yield
-  
+
 app/assets/stylesheets/chatspaces.scss:69
 app/assets/stylesheets/application.scss:2
 app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___530638384463247908_70164541330260'
@@ -7329,9 +7329,9 @@ Completed 200 OK in 524ms (Views: 519.6ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/www.google.com" for 127.0.0.1 at 2017-08-08 11:10:04 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/www.google.com"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -7367,9 +7367,9 @@ puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (186.5ms)
 Started GET "/www.google.com" for 127.0.0.1 at 2017-08-08 11:10:05 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/www.google.com"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -7405,9 +7405,9 @@ puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (153.6ms)
 Started GET "/www.google.com" for 127.0.0.1 at 2017-08-08 11:10:05 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/www.google.com"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -7499,9 +7499,9 @@ Completed 200 OK in 81ms (Views: 77.5ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/uses/sign_up" for 127.0.0.1 at 2017-08-08 11:14:35 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/uses/sign_up"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -7577,9 +7577,9 @@ Completed 200 OK in 80ms (Views: 78.1ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/www.google.com" for 127.0.0.1 at 2017-08-08 11:16:08 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/www.google.com"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -7664,9 +7664,9 @@ Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/users/sign_out" for 127.0.0.1 at 2017-08-08 11:20:59 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -7909,7 +7909,7 @@ Completed 200 OK in 460ms (Views: 413.5ms | ActiveRecord: 19.6ms)
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
 Started GET "/users" for 127.0.0.1 at 2017-08-08 12:41:56 +0900
   [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -7917,7 +7917,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.0.5) lib/active_record/migration.rb:573:in `check_pending!'
 activerecord (5.0.5) lib/active_record/migration.rb:549:in `call'
 actionpack (5.0.5) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
@@ -7963,9 +7963,9 @@ puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (113.1ms)
 Started GET "/users" for 127.0.0.1 at 2017-08-08 12:44:55 +0900
   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
-  
+
 ActionController::RoutingError (No route matches [GET] "/users"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -8001,9 +8001,9 @@ puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (17.5ms)
   Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (187.2ms)
 Started GET "/users" for 127.0.0.1 at 2017-08-08 12:44:58 +0900
-  
+
 ActionController::RoutingError (No route matches [GET] "/users"):
-  
+
 actionpack (5.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -8071,7 +8071,7 @@ Processing by MessagesController#index as HTML
 Completed 500 Internal Server Error in 518ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (File to import not found or unreadable: chatspaces.
 Load paths:
   /Users/tomi/projects/chat-space/app/assets/config
@@ -8086,14 +8086,14 @@ Load paths:
   /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
   /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actioncable-5.0.5/lib/assets/compiled
   /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts):
-     9:         .class.sub_sample 12px #999999
+     9:         .sub_sample 12px #999999
     10:       .header_box2
     11:         =link_to "www.google.com", class: "header_box2" do
     12:           =image_tag("edit.gif")
-    13: 
+    13:
     14:     .main_center.papa
     15:       .main_center_box1
-  
+
 app/assets/stylesheets/application.scss:2
 app/views/messages/index.html.haml:12:in `block in _app_views_messages_index_html_haml___678565345642376934_70187889209220'
 app/views/messages/index.html.haml:11:in `_app_views_messages_index_html_haml___678565345642376934_70187889209220'
@@ -8111,5 +8111,236 @@ Processing by MessagesController#index as HTML
   Rendered messages/_side.html.haml (5.3ms)
   Rendered messages/index.html.haml within layouts/application (466.2ms)
 Completed 200 OK in 584ms (Views: 581.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 14:52:24 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (15.7ms)
+  Rendered messages/index.html.haml within layouts/application (57.9ms)
+Completed 200 OK in 760ms (Views: 752.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 14:54:16 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (5.6ms)
+  Rendered messages/index.html.haml within layouts/application (17.2ms)
+Completed 200 OK in 526ms (Views: 523.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 14:56:35 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (5.0ms)
+  Rendered messages/index.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 501ms (Views: 498.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 14:58:29 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (6.6ms)
+  Rendered messages/index.html.haml within layouts/application (21.5ms)
+Completed 200 OK in 543ms (Views: 539.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 15:03:12 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (20.5ms)
+  Rendered messages/index.html.haml within layouts/application (38.8ms)
+Completed 200 OK in 598ms (Views: 594.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 15:06:00 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (5.5ms)
+  Rendered messages/index.html.haml within layouts/application (14.6ms)
+Completed 200 OK in 519ms (Views: 515.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 15:06:55 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (5.6ms)
+  Rendered messages/index.html.haml within layouts/application (18.3ms)
+Completed 200 OK in 479ms (Views: 477.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 15:07:13 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (5.2ms)
+  Rendered messages/index.html.haml within layouts/application (15.1ms)
+Completed 200 OK in 469ms (Views: 467.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 15:11:11 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (11.6ms)
+  Rendered messages/index.html.haml within layouts/application (28.9ms)
+Completed 200 OK in 587ms (Views: 582.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 15:22:56 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (8.8ms)
+  Rendered messages/index.html.haml within layouts/application (23.6ms)
+Completed 500 Internal Server Error in 129ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::Template::Error (Undefined variable: "$saidWhiteColor".):
+    4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    5:     %title ChatSpace
+    6:     = csrf_meta_tags
+    7:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    9:   %body
+   10:     = yield
+
+app/assets/stylesheets/messages.scss:29
+app/assets/stylesheets/application.scss:2
+app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___2674974734860741905_70187953992440'
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.7ms)
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (113.5ms)
+Started GET "/" for 127.0.0.1 at 2017-08-08 15:29:26 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (8.8ms)
+  Rendered messages/index.html.haml within layouts/application (22.4ms)
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::Template::Error (Undefined variable: "$said-white-color".):
+    4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    5:     %title ChatSpace
+    6:     = csrf_meta_tags
+    7:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    9:   %body
+   10:     = yield
+
+app/assets/stylesheets/messages.scss:29
+app/assets/stylesheets/application.scss:2
+app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___2674974734860741905_70187964131260'
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.8ms)
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (123.6ms)
+Started GET "/" for 127.0.0.1 at 2017-08-08 15:34:25 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (8.8ms)
+  Rendered messages/index.html.haml within layouts/application (27.7ms)
+Completed 200 OK in 709ms (Views: 706.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 15:34:44 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (8.8ms)
+  Rendered messages/index.html.haml within layouts/application (23.6ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::Template::Error (Undefined variable: "$side-white-color".):
+    4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    5:     %title ChatSpace
+    6:     = csrf_meta_tags
+    7:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    9:   %body
+   10:     = yield
+
+app/assets/stylesheets/messages.scss:28
+app/assets/stylesheets/application.scss:2
+app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___2674974734860741905_70187897898080'
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/tomi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (113.7ms)
+Started GET "/" for 127.0.0.1 at 2017-08-08 15:35:27 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (6.9ms)
+  Rendered messages/index.html.haml within layouts/application (19.2ms)
+Completed 200 OK in 63ms (Views: 60.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 15:38:34 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (9.0ms)
+  Rendered messages/index.html.haml within layouts/application (24.9ms)
+Completed 200 OK in 534ms (Views: 529.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 15:41:19 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (7.5ms)
+  Rendered messages/index.html.haml within layouts/application (20.0ms)
+Completed 200 OK in 565ms (Views: 562.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 15:44:30 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (6.8ms)
+  Rendered messages/index.html.haml within layouts/application (18.7ms)
+Completed 200 OK in 509ms (Views: 505.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 15:45:12 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (5.7ms)
+  Rendered messages/index.html.haml within layouts/application (27.4ms)
+Completed 200 OK in 498ms (Views: 495.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 15:58:02 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (4.6ms)
+  Rendered messages/index.html.haml within layouts/application (16.2ms)
+Completed 200 OK in 504ms (Views: 502.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 16:02:08 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (6.8ms)
+  Rendered messages/index.html.haml within layouts/application (17.5ms)
+Completed 200 OK in 626ms (Views: 624.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-08 16:02:51 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_side.html.haml (5.8ms)
+  Rendered messages/index.html.haml within layouts/application (20.6ms)
+Completed 200 OK in 497ms (Views: 494.6ms | ActiveRecord: 0.0ms)
 
 

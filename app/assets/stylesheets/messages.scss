@@ -21,12 +21,11 @@ height: 100vh;
 }
 
 .side_top_message_box{
-height: 16px;
-
+  height: 16px;
   .name{
   font-size: 16px;
   font-weight:Bold;
-  color: #FFFFFF;
+  color: $side-white-color;
   line-height: 120px;
   float: left;
   }
@@ -36,40 +35,40 @@ height: 16px;
 float: right;
 line-height: 90px;
 font-size: 16px;
-color: white;
+color: $main-white-color;
 
-  .class.icon_box1{
+  .icon_box1{
   float: right;
-  color: white;
+  color: $main-white-color;
   font-size: 25px;
   margin: 0px 10px 0px 10px;
 
-    .icon_box1{
-    color: white;
+    .icon_box1_icon{
+    color: $main-white-color;
     }
   }
 
-  .class.icon_box2{
+  .icon_box2{
   float: right;
   font-size: 25px;
   margin: 0px 10px 0px 10px;
 
-    .icon_box2{
-    color: white;
+    .icon_box2_icon{
+    color: $main-white-color;
     }
   }
 }
 
 .message{
     font-size: 15px;
-    color: #FFFFFF;
-    padding: 0px 0px 5px 0px;
+    color: $side-white-color;
+    padding-bottom: 5px;
 }
 
 .re_message{
 font-size: 11px;
-color: #FFFFFF;
-padding: 0px 0px 40px 0px;
+color: $side-white-color;
+padding-bottom: 40px;
 }
 
 .side_bottom{
@@ -77,18 +76,11 @@ width: 260px;
 height: calc(100vh - 120px);
 background-color: #2f3e51;
 padding: 20px 20px 0px 20px;
-
-  .side_bottom_box1{
-  }
-  .side_bottom_box2{
-  }
-  .side_bottom_box3{
-  }
 }
 
 
 .contents{
-  background-color: white;
+  background-color: $main-white-color;
   margin: 0 auto;
   height: 100vh;
 }
@@ -106,7 +98,7 @@ width: calc(100% - 300px);
 }
 
 header{
-color:white;
+color:$main-white-color;
 height: 120px;
 
   .header_box1{
@@ -120,7 +112,7 @@ height: 120px;
 
     .sub_sample{
     font-size: 12px;
-    color: #999999;
+    color: color_999;
     }
   }
 
@@ -138,107 +130,45 @@ height: 120px;
   height: calc(100% - 195px);
   background-color: #f8f8f8;
 
-  .main_center_box1{
-    .user_name{
-    font-size: 16px;
-    color: #434A54;
-    font-weight: Bold;
-    padding: 46px 0px 10px 0px;
-    }
+  .main_center_box1.user_name.reply.time{
 
-    .time{
-    font-size: 12px;
-    color: #999999;
-    }
-
-    .reply{
-    font-size: 14px;
-    font-family: #434A54;
-    padding: 0px 0px 40px 0px;
-    }
   }
-
-  .main_center_box2{
-    .user_name{
-    font-size: 16px;
-    color: #434A54;
-    font-weight: Bold;
-    padding: 46px 0px 10px 0px;
-    }
-
-    .time{
-    font-size: 12px;
-    color: #999999;
-    }
-
-    .reply{
-    font-size: 14px;
-    font-family: #434A54;
-    padding: 0px 0px 40px 0px;
-    }
-  }
-
-  .main_center_box3{
-    .user_name{
-    font-size: 16px;
-    color: #434A54;
-    font-weight: Bold;
-    padding: 46px 0px 10px 0px;
-    }
-
-    .time{
-    font-size: 12px;
-    color: #999999;
-    }
-
-    .reply{
-    font-size: 14px;
-    font-family: #434A54;
-    padding: 0px 0px 40px 0px;
-    }
-  }
-
-  // .main_center_box4{
-  //   .user_name{
-  //   font-size: 16px;
-  //   color: #434A54;
-  //   font-weight: Bold;
-  //   padding: 46px 0px 10px 0px;
-  //   }
-
-  //   .time{
-  //   font-size: 12px;
-  //   color: #999999;
-  //   }
-
-  //   .reply{
-  //   font-size: 14px;
-  //   font-family: #434A54;
-  //   padding: 0px 0px 40px 0px;
-  //   }
-  // }
 }
-
-
-
-
 
 .user_name{
 font-size: 16px;
-color: #434A54;
+color: $mian_name_black_color;
 font-weight: Bold;
 padding: 46px 0px 10px 0px;
 }
 
 .time{
 font-size: 12px;
-color: #999999;
+color: color_999;
 }
 
 .reply{
 font-size: 14px;
-font-family: #434A54;
-padding: 0px 0px 40px 0px;
+font-family: $mian_name_black_color;
+padding-bottom: 40px;
+}
+
+.user_name{
+font-size: 16px;
+color: $mian_name_black_color;
+font-weight: Bold;
+padding: 46px 0px 10px 0px;
+}
+
+.time{
+font-size: 12px;
+color: color_999;
+}
+
+.reply{
+font-size: 14px;
+font-family: $mian_name_black_color;
+padding-bottom: 40px;
 }
 
 .main_bottom{
@@ -247,14 +177,14 @@ background-color: #AAAAAA;
 height: 55px;
 
   .bottom_message_box{
-  background-color: white;
-  color: #434A54;
+  background-color: $main-white-color;
+  color: $mian_name_black_color;
   height: 50px;
   float: left;
   width: calc(100% - 135px);
   padding: 0px 10px;
 
-    .class.bottom_message{
+    .bottom_message{
     line-height: 50px;
     font-size: 16px;
     float: left;
@@ -265,15 +195,15 @@ height: 55px;
     line-height: 50px;
     }
   }
-  .class.bottom_sent_button{
+  .bottom_sent_button{
   float: right;
   height: 50px;
   width: 100px;
   background-color: #38AEF0;
-  color: white;
+  color: $main-white-color;
   font-size: 25px;
   text-align: center;
   line-height: 50px;
-  margin: 0px 0px 0px 15px;
+  margin-left: 15px;
   }
 }
