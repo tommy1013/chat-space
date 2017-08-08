@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  get 'chatspaces' => 'chatspaces#index'
+  devise_for :users
+  root 'messages#index'
 end
