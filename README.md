@@ -1,4 +1,5 @@
-#user
+
+# user
 
 |column|type|options|
 |----|------|-------|
@@ -6,37 +7,44 @@
 |name|string|null: false unique: true|
 |E-mail|string|null: false unique: true|
 |Password|string|null: false|
-##アソシエーション
+
+## アソシエーション
 has_many :thought group_user
-belong_to:
+belongs_to:
 
 
-#group_user
+# group_user
+
 |column|type|options|
 |---|-----|------|
 |user_id|integer|null: false　foreign_key: true　add_index|
 |group_id|integer|null: false　foreign_key: true　add_index|
-##アソシエーション
-belogns_to :group
+
+## アソシエーション
+belongs_to :group
 belongs_to :user
 
 
-#group
+# group
+
 |column|type|options|
 |---|-----|-----|
 |group_name|string|null: false unique: true|
-##アソシエーション
+
+## アソシエーション
 has_many:thougt group_user
 belogns_to :comment
 
 
-#comments
+# comments
+
 |column|type|options|
 |---|-----|-----|
 |user_id|integer|null: false　foreign_key: true|
 |group_id|integer|null: false　foreign_key: true|
 |message|text||
 |image|string||
-##アソシエーション
-belogns_to :group
+
+## アソシエーション
+belongs_to :group
 belongs_to :user
