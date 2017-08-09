@@ -9,7 +9,7 @@
 |Password|string|null: false|
 
 ## アソシエーション
-has_many :groups through:group_user
+has_many :groups through:group_users
 has_many :messages
 
 
@@ -32,7 +32,7 @@ belongs_to :user
 |name|string|null: false unique: true|
 
 ## アソシエーション
-has_many:users　through:group_user
+has_many:users　through:group_users
 has_many :messages
 
 
