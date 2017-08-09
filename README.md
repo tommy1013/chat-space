@@ -9,8 +9,8 @@
 |Password|string|null: false|
 
 ## アソシエーション
-has_many :group thought:group_user
-belongs_to:message
+has_many :groups through:group_user
+has_many :messages
 
 
 # group_user
@@ -32,8 +32,8 @@ belongs_to :user
 |name|string|null: false unique: true|
 
 ## アソシエーション
-has_many:user　thougt:group_user
-belogns_to :message
+has_many:users　through:group_user
+has_many :messages
 
 
 # message
