@@ -10,7 +10,7 @@
 
 ## アソシエーション
 has_many :thought group_user
-belongs_to:
+belongs_to:message
 
 
 # group_user
@@ -29,14 +29,14 @@ belongs_to :user
 
 |column|type|options|
 |---|-----|-----|
-|group_name|string|null: false unique: true|
+|name|string|null: false unique: true|
 
 ## アソシエーション
 has_many:thougt group_user
-belogns_to :comment
+belogns_to :message
 
 
-# comments
+# message
 
 |column|type|options|
 |---|-----|-----|
