@@ -4,12 +4,12 @@
 |column|type|options|
 |----|------|-------|
 |id|integer|null: false|
-|name|string|null: false unique: true|
+|name|string|null: false unique: true　add_index|
 |E-mail|string|null: false unique: true|
 |Password|string|null: false|
 
 ## アソシエーション
-has_many :thought group_user
+has_many :group thought:group_user
 belongs_to:message
 
 
@@ -17,8 +17,8 @@ belongs_to:message
 
 |column|type|options|
 |---|-----|------|
-|user_id|integer|null: false　foreign_key: true　add_index|
-|group_id|integer|null: false　foreign_key: true　add_index|
+|user_id|integer|null: false　foreign_key: true|
+|group_id|integer|null: false　foreign_key: true|
 
 ## アソシエーション
 belongs_to :group
@@ -32,7 +32,7 @@ belongs_to :user
 |name|string|null: false unique: true|
 
 ## アソシエーション
-has_many:thougt group_user
+has_many:user　thougt:group_user
 belogns_to :message
 
 
