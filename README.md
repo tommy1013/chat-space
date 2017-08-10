@@ -1,36 +1,50 @@
-<!-- # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# user
 
-Things you may want to cover:
+|column|type|options|
+|----|------|-------|
+|id|integer|null: false|
+|name|string|null: false unique: true　add_index|
+|E-mail|string|null: false unique: true|
+|Password|string|null: false|
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ... -->
+## アソシエーション
+has_many :groups through:group_users
+has_many :messages
 
 
-## membersテーブル
+# group_user
 
-|Column|Type|Options|
-|------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|column|type|options|
+|---|-----|------|
+|user_id|integer|null: false　foreign_key: true|
+|group_id|integer|null: false　foreign_key: true|
 
-### Association
-- belongs_to :group
-- belongs_to :user
+## アソシエーション
+belongs_to :group
+belongs_to :user
+
+
+# group
+
+|column|type|options|
+|---|-----|-----|
+|name|string|null: false unique: true|
+
+## アソシエーション
+has_many:users　through:group_users
+has_many :messages
+
+
+# message
+
+|column|type|options|
+|---|-----|-----|
+|user_id|integer|null: false　foreign_key: true|
+|group_id|integer|null: false　foreign_key: true|
+|body|text||
+|image|string||
+
+## アソシエーション
+belongs_to :group
+belongs_to :user
