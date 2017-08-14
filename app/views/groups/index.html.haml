@@ -6,7 +6,7 @@
         %h1.chat-header__left__title SAMPLEグループ
         .chat-header__left__sub_sample 12px #999999
       .chat-header__right
-        =link_to edit_group_path(@group), class: "header_box2" do
+        =link_to "/groups/#{@group_id}/edit", class: "header_box2" do
           =image_tag("edit.gif")
 
     .main_center.papa

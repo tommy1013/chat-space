@@ -68,3 +68,9 @@ gem "font-awesome-rails"
 gem 'devise'
 
 gem 'pry-rails'
+
+gem 'html2haml'
+
+gem 'erb2haml'
+
+gem 'rubocop', '~> 0.49.1', require: false
