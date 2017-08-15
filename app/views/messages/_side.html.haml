@@ -11,4 +11,4 @@
           =fa_icon 'cog'
   .side-bottom
     - @groups.each do |group|
-      = render partial: 'shared/side-bottom__box', locals: { group: group }
+      =render 'shared/side-bottom__box', locals: { group: group }

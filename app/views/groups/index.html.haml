@@ -1,32 +1,3 @@
 .contents.clearfix
   = render 'shared/side'
-  .main
-    .chat-header.papa
-      .chat-header__left
-        %h1.chat-header__left__title SAMPLEグループ
-        .chat-header__left__sub_sample 12px #999999
-      .chat-header__right
-        =link_to "/groups/#{@group_id}/edit", class: "header_box2" do
-          =image_tag("edit.gif")
 
-    .main_center.papa
-      .main_center__box1
-        .user_name ryosukemaehira
-        .time2016 2016/10/02
-        .reply なるほど
-      .main_center__box1
-        .user_name 16px Bold #434A54
-        .reply 14px #434A54
-      .main_center__box1
-        .user_name ryosukemaehira
-        .time 2016/10/02
-        .reply command Enterで送信したい感がある
-
-    .main_bottom.papa
-      %input{:name => "url", :placeholder => "type a message", class: "main_bottom__message-box"}
-        .main_bottom__message-box__icon
-          = link_to "www.google.com", class: "bottom_icon" do
-            = fa_icon 'picture-o'
-      .main_bottom__sent-button
-        = link_to "www.google.com", class: "bottom_sent_button" do
-          Send
