@@ -1,14 +1,12 @@
 .contents.clearfix
-  = render partial: "side"
-
-
+  = render 'shared/side'
   .main
     .chat-header.papa
       .chat-header__left
         %h1.chat-header__left__title SAMPLEグループ
         .chat-header__left__sub_sample 12px #999999
       .chat-header__right
-        =link_to "www.google.com", class: "header_box2" do
+        =link_to edit_group_path(@group), class: "header_box2" do
           =image_tag("edit.gif")
 
     .main_center.papa
@@ -25,7 +23,8 @@
         .reply command Enterで送信したい感がある
 
     .main_bottom.papa
-      %input{:name => "url", :placeholder => "type a message", class: "main_bottom__message-box"}
+      = form_for @group do |f|
+        =f.text_field :name, class: "main_bottom__message-box", placeholder: "type a message"
         .main_bottom__message-box__icon
           = link_to "www.google.com", class: "bottom_icon" do
             = fa_icon 'picture-o'
