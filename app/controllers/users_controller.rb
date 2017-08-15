@@ -1,12 +1,13 @@
 class UsersController < ApplicationController
   before_action :set_group, only: [:edit, :update]
+  before_action :check_group, only: [:edit]
 
   def edit
   end
 
   def update
     @user.update(user_params)
-    if @user.id == current_user.id
+    if @user.update
       redirect_to root_path
      else
       flash.now[:alert] = "名前を入力してください"
@@ -32,6 +33,11 @@ class UsersController < ApplicationController
 
   def set_group
    @user = User.find(params[:id])
+  end
+
+  def check_group
+    redirect_to root_path unless @user.id == current_user.id
+
   end
 end
 
