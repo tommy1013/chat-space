@@ -1,23 +1,26 @@
 class UsersController < ApplicationController
+  before_action :set_group, only: [:edit, :update]
 
   def edit
   end
 
   def update
-    user.update(user_params)
-    if user.id == current_user.id
-    redirect_to root_path
+    @user.update(user_params)
+    if @user.id == current_user.id
+      redirect_to root_path
      else
-      flash.now[:alert] = "グループ名を入力してください"
+      flash.now[:alert] = "名前を入力してください"
+      render :edit
     end
   end
 
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to root_path, notice: "グループを作成しました"
+      redirect_to root_path, notice: "名前を登録しました"
     else
-      flash.now[:alert] = "グループ名を入力してください"
+      flash.now[:alert] = "名前を入力してください"
+      render :new
     end
   end
 
@@ -31,5 +34,6 @@ class UsersController < ApplicationController
    @user = User.find(params[:id])
   end
 end
+
 
 

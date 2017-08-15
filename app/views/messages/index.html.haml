@@ -23,11 +23,11 @@
         .reply command Enterで送信したい感がある
 
     .main_bottom.papa
-      %input{:name => "url", :placeholder => "type a message", class: "main_bottom__message-box"}
+      = form_for @group do |f|
+        =f.text_field :name, class: "main_bottom__message-box", placeholder: "type a message"
         .main_bottom__message-box__icon
           = link_to "www.google.com", class: "bottom_icon" do
             = fa_icon 'picture-o'
       .main_bottom__sent-button
         = link_to "www.google.com", class: "bottom_sent_button" do
           Send
-
