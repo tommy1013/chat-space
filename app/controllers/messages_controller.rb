@@ -5,3 +5,4 @@ class MessagesController < ApplicationController
     @group = Group.first
   end
 end
+

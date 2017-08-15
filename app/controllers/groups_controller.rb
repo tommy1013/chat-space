@@ -26,7 +26,7 @@ class GroupsController < ApplicationController
       redirect_to root_path, notice: "グループを編集しました"
     else
       flash.update[:alert] = "グループ名を入力してください"
-      render action: 'edit'
+      render :edit
     end
   end
 

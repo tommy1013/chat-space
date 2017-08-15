@@ -4,8 +4,12 @@ class UsersController < ApplicationController
   end
 
   def update
-    user.update(user_params) if user.id == current_user.id
+    user.update(user_params)
+    if user.id == current_user.id
     redirect_to root_path
+     else
+      flash.now[:alert] = "グループ名を入力してください"
+    end
   end
 
   def create
