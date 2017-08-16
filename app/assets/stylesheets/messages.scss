@@ -36,6 +36,10 @@ body {
     line-height: 90px;
     font-size: 16px;
 
+    a{
+    color:white;
+    }
+
 
     &__icon-left{
       float: left;
@@ -50,7 +54,6 @@ body {
     }
   }
 }
-
 
 .message{
   font-size: 15px;
@@ -166,6 +169,7 @@ body {
     &__icon{
       position:absolute; bottom:16px; right:190px;
       font-size:20px;
+      color: black;
     }
   }
   &__sent-button{
