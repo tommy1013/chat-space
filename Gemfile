@@ -77,3 +77,8 @@ gem 'erb2haml'
 gem 'rubocop', '~> 0.49.1', require: false
 
 gem 'carrierwave', '~> 1.0'
+
+gem "mini_magick"
+
+gem "fog"
+
