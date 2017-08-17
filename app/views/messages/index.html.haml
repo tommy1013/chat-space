@@ -12,22 +12,14 @@
     .main_center.papa
       .main_center__box1
         .user_name ryosukemaehira
-        .time2016 2016/10/02
-        .reply なるほど
-      .main_center__box1
-        .user_name 16px Bold #434A54
-        .reply 14px #434A54
-      .main_center__box1
-        .user_name ryosukemaehira
         .time 2016/10/02
         .reply command Enterで送信したい感がある
 
     .main_bottom.papa
-      = form_for @group do |f|
-        =f.text_field :name, class: "main_bottom__message-box", placeholder: "type a message"
+      = form_for ([@group,@message]) do |f|
+        =f.text_field :body, class: "main_bottom__message-box", placeholder: "type a message"
         .main_bottom__message-box__icon
           = link_to "www.google.com", class: "bottom_icon" do
             = fa_icon 'picture-o'
-      .main_bottom__sent-button
-        = link_to "www.google.com", class: "bottom_sent_button" do
-          Send
+        .main_bottom__sent-button
+          =f.submit "sent"
