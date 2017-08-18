@@ -1,5 +1,6 @@
 .side-bottom__box
-  .message
-    %p
-      = group.name
-  .re_message まだメッセージはありません
+  - @groups.each do |group|
+    =link_to "#{group.name}","groups/#{group.id}/messages", class: "message"
+
+    .re_message message.boby
+    / message.try(:parent).try(:first_name)

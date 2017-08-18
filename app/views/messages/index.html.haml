@@ -1,5 +1,5 @@
 .contents.clearfix
-  = render 'shared/side'
+  = render 'shared/side', collection: @groups
   .main
     .chat-header.papa
       .chat-header__left
@@ -10,10 +10,16 @@
           =image_tag("edit.gif")
 
     .main_center.papa
-      .main_center__box1
-        .user_name ryosukemaehira
-        .time 2016/10/02
-        .reply command Enterで送信したい感がある
+      - @messages.each do |message|
+        .main_center__box1
+          %p
+            %span.user_name ryosukemaehira
+            %span.time
+              = message.created_at
+            .reply
+              = message.body
+            .image
+              = image_tag message.image.to_s
 
     .main_bottom.papa
       = form_for ([@group,@message]) do |f|
