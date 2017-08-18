@@ -8,3 +8,4 @@ class Message < ApplicationRecord
   validates :body, presence: true, unless: :image?
 end
 
+

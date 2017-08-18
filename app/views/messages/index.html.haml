@@ -1,5 +1,5 @@
 .contents.clearfix
-  = render 'shared/side', collection: @groups
+  = render 'shared/side', locals: { groups: @groups }
   .main
     .chat-header.papa
       .chat-header__left
