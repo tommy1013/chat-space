@@ -4,5 +4,7 @@ class Message < ApplicationRecord
 
   mount_uploader :image, ImageUploader
 
+  validates :group_id, presence: true
+  validates :body, presence: true, unless: :image?
 end
 
