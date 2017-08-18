@@ -19,7 +19,7 @@
       = form_for ([@group,@message]) do |f|
         =f.text_field :body, class: "main_bottom__message-box", placeholder: "type a message"
         .main_bottom__message-box__icon
-          = link_to "www.google.com", class: "bottom_icon" do
-            = fa_icon 'picture-o'
+          =f.label :image, class: 'fa fa-picture-o' do
+            =f.file_field :image, class: "bottom_icon", id: 'message_image'
         .main_bottom__sent-button
           =f.submit "sent"
