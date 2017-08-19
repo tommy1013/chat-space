@@ -1,7 +1,7 @@
 class GroupsController < ApplicationController
   before_action :set_group, only: %i[edit update]
   def index
-    @groups = Group.all
+    @groups = current_user.groups
   end
 
   def new
