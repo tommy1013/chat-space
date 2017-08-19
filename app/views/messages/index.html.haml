@@ -17,16 +17,7 @@
           = image_tag("edit.gif")
 
     .main_center.papa
-      - @messages.each do |message|
-        .main_center__box1
-          %p
-            %span.user_name @group.name
-            %span.time
-              = message.created_at
-            .reply
-              = message.body
-            .image
-              = image_tag message.image.to_s
+      = render partial: 'shared/main-messages', collection: @messages,as: 'message'
 
     .main_bottom.papa
       = form_for ([@group,@message]) do |f|

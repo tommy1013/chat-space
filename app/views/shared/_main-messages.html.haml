@@ -1,0 +1,10 @@
+.main_center__box1
+  %p
+    %span.user_name
+      = @user.name
+    %span.time
+      = message.created_at
+    .reply
+      = message.body
+    .image
+      = image_tag message.image.to_s
