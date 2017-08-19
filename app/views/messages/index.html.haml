@@ -3,8 +3,11 @@
   .main
     .chat-header.papa
       .chat-header__left
-        %h1.chat-header__left__title SAMPLEグループ
-        .chat-header__left__sub_sample 12px #999999
+        %h1.chat-header__left__title
+          = @group.name
+        .chat-header__left__sub_sample
+          %p member:
+          = @group.users.pluck(:name).join(",")
       .chat-header__right
         =link_to edit_group_path(@group), class: "header_box2" do
           =image_tag("edit.gif")
@@ -13,7 +16,7 @@
       - @messages.each do |message|
         .main_center__box1
           %p
-            %span.user_name ryosukemaehira
+            %span.user_name @groups.name
             %span.time
               = message.created_at
             .reply

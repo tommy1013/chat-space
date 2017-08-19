@@ -113,6 +113,11 @@ body {
     &__sub_sample{
       font-size: 12px;
       color: $color_gray;
+
+      p{
+        float: left;
+        margin-right: 10px;
+        }
     }
   }
 
