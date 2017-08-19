@@ -1,5 +1,9 @@
 .contents.clearfix
-  = render 'shared/side', locals: { groups: @groups }
+  .side
+    .side_top
+      = render partial: 'shared/side'
+    .side-bottom
+      = render partial: 'shared/side-bottom__box', collection: @groups, as: 'group'
   .main
     .chat-header.papa
       .chat-header__left
@@ -7,10 +11,10 @@
           = @group.name
         .chat-header__left__sub_sample
           %p member:
-          = @group.users.pluck(:name).join(",")
+          = @group.arange_user
       .chat-header__right
-        =link_to edit_group_path(@group), class: "header_box2" do
-          =image_tag("edit.gif")
+        = link_to edit_group_path(@group), class: "header_box2" do
+          = image_tag("edit.gif")
 
     .main_center.papa
       - @messages.each do |message|
