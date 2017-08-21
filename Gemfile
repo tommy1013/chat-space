@@ -82,3 +82,4 @@ gem "mini_magick"
 
 gem "fog"
 
+gem 'active_decorator'

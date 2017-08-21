@@ -1,8 +1,9 @@
 class MessagesController < ApplicationController
   before_action :set_group, only: %i[index create]
   def index
-    @messages = Message.all
     @message = Message.new
+    @groups = current_user.groups
+    @user = current_user
   end
 
   def create
@@ -24,6 +25,8 @@ class MessagesController < ApplicationController
 
   def set_group
      @group = Group.find(params[:group_id])
+     @messages = @group.messages
   end
 
 end
+

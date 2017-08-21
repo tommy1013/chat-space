@@ -69,7 +69,7 @@ body {
 
 .side-bottom{
   width: 260px;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 140px);
   background-color: #2f3e51;
   padding: 20px 20px 0px 20px;
   overflow: scroll;
@@ -92,7 +92,7 @@ body {
 .main{
   float: right;
   height: 100%;
-  width: calc(100% - 300px);
+  width: calc(100vw - 300px);
 }
 
 .chat-header{
@@ -113,12 +113,17 @@ body {
     &__sub_sample{
       font-size: 12px;
       color: $color_gray;
+
+      p{
+        float: left;
+        margin-right: 10px;
+        }
     }
   }
 
   &__right{
     float: right;
-    line-height: 140px;
+    line-height: 120px;
   }
 }
 
@@ -127,12 +132,17 @@ body {
 }
 
 .main_center{
-  height: calc(100% - 195px);
+  height: calc(100vh - 215px);
   background-color: #f8f8f8;
-
+  overflow: scroll;
+  width: calc(100vw - 380px);
   &__box1.user_name.reply.time{
 
   }
+}
+
+.main_center.papa{
+  margin-right: 0px;
 }
 
 .user_name{
@@ -157,6 +167,7 @@ body {
   padding: 20px 40px 20px 50px;
   background-color: #AAAAAA;
   height: 55px;
+  position: relative;
 
   &__message-box{
     background-color: $main-white-color;
@@ -167,7 +178,9 @@ body {
     padding: 0px 10px;
 
     &__icon{
-      position:absolute; bottom:16px; right:190px;
+      position: absolute;
+      top: 34px;
+      right: 190px;
       font-size:20px;
       color: black;
     }
@@ -177,7 +190,7 @@ body {
     height: 50px;
     width: 100px;
     background-color: #38AEF0;
-    color: $main-white-color;
+    color: #38AEF0;
     font-size: 25px;
     text-align: center;
     line-height: 50px;

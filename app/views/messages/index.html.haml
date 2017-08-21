@@ -1,19 +1,23 @@
 .contents.clearfix
-  = render 'shared/side'
+  .side
+    .side_top
+      = render partial: 'shared/side'
+    .side-bottom
+      = render partial: 'shared/side-bottom__box', collection: @groups, as: 'group'
   .main
     .chat-header.papa
       .chat-header__left
-        %h1.chat-header__left__title SAMPLEグループ
-        .chat-header__left__sub_sample 12px #999999
+        %h1.chat-header__left__title
+          = @group.name
+        .chat-header__left__sub_sample
+          %p member:
+          = @group.arange_user
       .chat-header__right
-        =link_to edit_group_path(@group), class: "header_box2" do
-          =image_tag("edit.gif")
+        = link_to edit_group_path(@group), class: "header_box2" do
+          = image_tag("edit.gif")
 
     .main_center.papa
-      .main_center__box1
-        .user_name ryosukemaehira
-        .time 2016/10/02
-        .reply command Enterで送信したい感がある
+      = render partial: 'shared/main-messages', collection: @messages,as: 'message'
 
     .main_bottom.papa
       = form_for ([@group,@message]) do |f|
