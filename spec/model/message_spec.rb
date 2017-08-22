@@ -4,7 +4,6 @@ require 'pry-rails'
 describe Message do
   describe '#create' do
     context 'valid with attribute'do
-
       it "is valid with a body" do
         message = build(:message, image: nil)
         expect(message).to be_valid
