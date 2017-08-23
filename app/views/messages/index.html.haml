@@ -25,5 +25,5 @@
         .main_bottom__message-box__icon
           =f.label :image, class: 'fa fa-picture-o' do
             =f.file_field :image, class: "bottom_icon", id: 'message_image'
-        .main_bottom__sent-button
-          =f.submit "sent"
+        =f.submit "send", class: "main_bottom__sent-button"
+
