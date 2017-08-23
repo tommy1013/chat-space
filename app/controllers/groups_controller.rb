@@ -41,18 +41,6 @@ class GroupsController < ApplicationController
     @group = Group.find(params[:id])
   end
 
-  # def user_logged_in?
-  #   if session[:user_id]
-  #     begin
-  #       @current_user = User.find_by(user_id: session[:user_id])
-  #     rescue ActiveRecord::RecordNotFound
-  #       reset_user_session
-  #     end
-  #   end
-  #   return if @current_user
-  #   # @current_userが取得できなかった場合はログイン画面にリダイレクト
-  #   flash[:referer] = request.fullpath
-  # end
 end
 
 

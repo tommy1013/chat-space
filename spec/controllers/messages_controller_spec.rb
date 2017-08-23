@@ -2,27 +2,26 @@ require 'rails_helper'
 require 'pry-rails'
 
 describe MessagesController, :type => :controller do
-  # let(:user) {create(:user)}
+  let(:user) {create(:user)}
   let(:group) {create(:group)}
   let(:message) {create(:message)}
+  # let(:message_group_id) {attributes_for(:message, group_id: group)}
+  let(:vaild_params) {{group_id: group, message: attributes_for(:message)}}
 
     describe 'GET #index' do
-      describe 'ログインしている場合' do
+      context 'ログインしている場合' do
         before do
           user = create(:user)
           login_user user
-          get :index, group_id: group.id
+          get :index, params: {group_id: group}
         end
 
         it "メッサージのindexに行くか" do
-          get :index, params: {group_id: group}
           expect(response).to render_template :index
         end
 
         it "アクション内で定義している@messageがあるか" do
           expect(assigns(:message)).to be_a_new Message
-          # リクエストを送る（ パラメーターと ）
-          #インスタンス変数のテスト
         end
 
         it "アクション内で定義している@groupがあるか" do
@@ -41,34 +40,32 @@ describe MessagesController, :type => :controller do
 
     describe 'ログインしていない場合' do
       before do
-        get :index, group_id: group.id
+        get :index, params: { group_id: group.id }
       end
       it "意図したビューにリダイレクトできているか" do
         expect(response).to redirect_to new_user_session_path
-        # 処理
       end
     end
 
     describe 'POST #index' do
-      describe 'ログインしている場合' do
+      context 'ログインしている場合' do
         before do
           user = create(:user)
           login_user user
-          get :index, group_id: group.id
+          get :index, params: { group_id: group.id }
         end
 
         it 'メッセージの保存はできたのか' do
           expect{
             post :create,
-            params: {
-              message: attributes_for(:message),
-              group_id: group.id
-            }
-         }.to change(Message, :count).by(1)
+            params: vaild_params
+          }
+          .to change(Message, :count).by(1)
         end
 
         it "意図した画面に遷移しているか" do
-          post :create, params: { group_id: group, message: attributes_for(:message) }
+          post :create, params: vaild_params
+
           expect(response).to redirect_to group_messages_path
         end
 
@@ -90,11 +87,10 @@ describe MessagesController, :type => :controller do
 
     describe 'ログインしていない場合' do
       before do
-        get :index, group_id: group.id
+        get :index, params: { group_id: group.id }
       end
       it "意図したビューにリダイレクトできているか" do
         expect(response).to redirect_to new_user_session_path
-      # 処理
       end
     end
 
