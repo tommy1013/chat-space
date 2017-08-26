@@ -45,6 +45,7 @@ $(function(){
     })
      .fail(function(){
       alert('error');
-    })
+    });
+     return false;
   })
 });
