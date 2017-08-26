@@ -26,16 +26,3 @@
           =f.label :image, class: 'fa fa-picture-o' do
             =f.file_field :image, class: "bottom_icon", id: 'message_image'
         =f.submit "send", class: "main_bottom__sent-button"
-
-
-
-/ .main_center__box1
-/   %p
-/     %span.user_name
-/       = message.user.name
-/     %span.time
-/       = message.created_at
-/     .reply
-/       = message.body
-/     .image
-/       = image_tag message.image.to_s

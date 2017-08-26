@@ -21,7 +21,7 @@ $(function(){
   $('#new_message').on('submit', function(e){
     e.preventDefault();
     var formData = new FormData(this);
-    var url = $(this).attr('action')
+    var url = $(this).attr('action');
     $.ajax({
       url: url,
       type: "POST",
@@ -32,16 +32,10 @@ $(function(){
     })
     .done(function(data){
       var html = buildHTML(data);
-      $('.main_center').append(html)
-      console.log(html);
+      $('.main_center').append(html);
       $('#message_body').val('');
       $('#message_image').val('');
       $('.main_center').animate({scrollTop: $('.main_center')[0].scrollHeight}, 'fast');
-      // $('.main_center').animate({scrollTop: $(data).offset().top},'slow');
-      // $("#parent").append("<li id='item'>Last!!</li>");
-
-      // $('.message.created_at').val('');
-      // $('.message.user.name').val('');
     })
      .fail(function(){
       alert('error');
