@@ -6,7 +6,7 @@ describe MessagesController, :type => :controller do
   let(:group) {create(:group)}
   let(:message) {create(:message)}
   # let(:message_group_id) {attributes_for(:message, group_id: group)}
-  let(:vaild_params) {{group_id: group, message: attributes_for(:message)}}
+  let(:vaild_params) { {group_id: group, message: attributes_for(:message)}}
 
     describe 'GET #index' do
       context 'ログインしている場合' do
