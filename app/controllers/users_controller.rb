@@ -2,6 +2,14 @@ class UsersController < ApplicationController
   before_action :set_group, only: [:edit, :update]
   before_action :check_group, only: [:edit]
 
+  def index
+    @users = User.where('name LIKE(?)', "%#{params[:keyword]}%")
+    respond_to do |format|
+       format.html
+       format.json
+    end
+  end
+
   def edit
   end
 
@@ -37,7 +45,6 @@ class UsersController < ApplicationController
 
   def check_group
     redirect_to root_path unless @user.id == current_user.id
-
   end
 end
 
