@@ -3,6 +3,10 @@ class MessagesController < ApplicationController
   def index
     @message = Message.new
     @groups = current_user.groups
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 
   def create
@@ -26,7 +30,7 @@ class MessagesController < ApplicationController
 
   def set_group
      @group = Group.find(params[:group_id])
-     @messages = @group.messages
+     @messages = @group.messages.includes(:user)
   end
 
 end
